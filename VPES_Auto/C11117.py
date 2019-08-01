@@ -17,11 +17,11 @@ from testrail import *
 
 # TestRail run_id, Testcase_id, Message 정보
 # run_id = 240
-# case_id = 11111
+# case_id = 11113
 # msg = 'Test Auto Checking'
 
-class C11111(unittest.TestCase):
-    def test_C11111(self):
+class C11117(unittest.TestCase):
+    def test_C11117(self):
         p: default_user
         p.setUp()
         p.test_user_init()
@@ -31,11 +31,18 @@ class C11111(unittest.TestCase):
         p.driver.find_element_by_id("id").send_keys("Test")
         p.driver.find_element_by_id("password").clear()
         p.driver.find_element_by_id("password").send_keys("wowkw5629!@")
+        p.driver.find_element_by_id("surePassword").clear()
+        p.driver.find_element_by_id("surePassword").send_keys("wowkw5629!@")
         p.driver.find_element_by_id("name").clear()
-        p.driver.find_element_by_id("name").send_keys("Test_Name")
-        element = p.driver.find_element_by_id("btnContactUs")
-        self.assertEqual(element.is_enabled(),False)
+        p.driver.find_element_by_id("name").send_keys("한글")
+        p.driver.find_element_by_id("btnContactUs").click()
+        time.sleep(1)
+        self.assertEqual(p.driver.find_element_by_id("modal-content").text, "회원가입이 완료되었습니다.")
         time.sleep(2)
+        p.driver.find_element_by_id("username").send_keys("Test")  # 로그인
+        p.driver.find_element_by_id("pwd").send_keys("wowkw5629!@")
+        p.driver.find_element_by_id("pwd").send_keys(Keys.RETURN)
+        self.assertEqual()
     # TestRail 결과 입력
     # try :
     #     self.assertEqual(element.is_enabled(),False)

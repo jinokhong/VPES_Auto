@@ -1,4 +1,3 @@
-from Default_User import *
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
@@ -17,28 +16,26 @@ from testrail import *
 
 # TestRail run_id, Testcase_id, Message 정보
 # run_id = 240
-# case_id = 11111
+# case_id = 11113
 # msg = 'Test Auto Checking'
 
-class C11111(unittest.TestCase):
-    def test_C11111(self):
-        p: default_user
-        p.setUp()
-        p.test_user_init()
-        p.driver.get("http://211.116.223.190:18080/vpes") # VPES 서버 진입
-        p.driver.find_element_by_id("signUp").click()
-        p.driver.find_element_by_id("id").clear()
-        p.driver.find_element_by_id("id").send_keys("Test")
-        p.driver.find_element_by_id("password").clear()
-        p.driver.find_element_by_id("password").send_keys("wowkw5629!@")
-        p.driver.find_element_by_id("name").clear()
-        p.driver.find_element_by_id("name").send_keys("Test_Name")
-        element = p.driver.find_element_by_id("btnContactUs")
-        self.assertEqual(element.is_enabled(),False)
+class C11115(unittest.TestCase):
+
+    def setUp(self):
+        self.driver = webdriver.Chrome()
+        self.driver.implicitly_wait(30)
+        self.driver.maximize_window()
+
+    def test_C11115(self):
+        driver = self.driver
+        driver.get("http://211.116.223.190:18080/vpes") # VPES 서버 진입
+        driver.find_element_by_id("signUp").click()
+        element = driver.find_element_by_id("btnContactUs")
+        self.assertEqual(element.is_enabled(), False)
         time.sleep(2)
     # TestRail 결과 입력
     # try :
-    #     self.assertEqual(element.is_enabled(),False)
+    #     self.assertEqual(element.is_enabled(), False)
     #     status_id = 1
     # except :
     #     status_id = 5

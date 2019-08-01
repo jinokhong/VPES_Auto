@@ -48,7 +48,6 @@ class C17(unittest.TestCase):
         assert "SVN" in p.driver.find_element_by_xpath("//tbody[@id='projectStateList']/tr/td[3]").text
         time.sleep(3)
 
-
         # TestRail 결과 입력
         # try :
         #     assert "Selenium" in p.driver.find_element_by_xpath("//tbody[@id='projectStateList']/tr/td[2]").text
