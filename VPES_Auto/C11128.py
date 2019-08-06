@@ -17,7 +17,8 @@ from testrail import *
 # TestRail run_id, Testcase_id, Message 정보
 # run_id = 240
 # case_id = 11122
-# msg = 'Test Auto Checking'
+# passMsg = 'Test Run Success !!'
+# failMsg = 'Test Run Fail !!'
 
 class C11128(unittest.TestCase):
     def setUp(self):
@@ -36,7 +37,9 @@ class C11128(unittest.TestCase):
 
     # TestRail 결과 입력
     # try :
-    #     self.assertEqual(element.is_enabled(),False)
+    #     assert "체계" in driver.find_element_by_xpath("//*[@id='projectTeam']/thead/tr/th").text
+    #     assert "CSCI" in driver.find_element_by_xpath("//*[@id='projectTeam']/thead/tr/th[2]").text
+    #     assert "삭제" in driver.find_element_by_xpath("//*[@id='projectTeam']/thead/tr/th[3]").text
     #     status_id = 1
     # except :
     #     status_id = 5
@@ -46,5 +49,16 @@ class C11128(unittest.TestCase):
     #     {'status_id': status_id, 'comment': msg,})
     # print('\n Run ID : %s\n Test Case ID: %s\n Message : %s\n' % (run_id, case_id, msg))
 
-
+    # Test Rail 결과 메세지 입력
+    # if status_id == 1:
+    #     print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (run_id, case_id, passMsg))
+    #     client.send_post(
+    #         'add_result_for_case/%s/%s' % (run_id, case_id),
+    #         {'status_id': status_id, 'comment': passMsg, })
+    #
+    # elif status_id == 5:
+    #     print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (run_id, case_id, failMsg))
+    #     client.send_post(
+    #         'add_result_for_case/%s/%s' % (run_id, case_id),
+    #         {'status_id': status_id, 'comment': failMsg, })
 

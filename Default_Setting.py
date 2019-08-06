@@ -8,6 +8,15 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
 import unittest, time, re
+import os
+
+# TestRail 접속 정보
+# client = APIClient('http://211.116.223.42/testrail')
+# client.user = 'johong@suresofttech.com'
+# client.password = '12345'
+# passMsg = 'Test Run Success !!'
+# failMsg = 'Test Run Fail !!'
+# run_id = 240
 
 usr = "qscroll"
 pwd = "sure"
@@ -42,6 +51,7 @@ class default(unittest.TestCase):
         except NoSuchElementException: # 엘리먼트 없으면 VPES 메인 페이지로 이동 클릭
             driver.find_element_by_xpath("//*[@id='leftWrap']/h1/a/img").click()
         time.sleep(5)
+
 
     # def tearDown(self):
     #     self.driver.quit()

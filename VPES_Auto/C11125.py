@@ -17,7 +17,8 @@ from testrail import *
 # TestRail run_id, Testcase_id, Message 정보
 # run_id = 240
 # case_id = 11111
-# msg = 'Test Auto Checking'
+# passMsg = 'Test Run Success !!'
+# failMsg = 'Test Run Fail !!'
 
 class C11125(unittest.TestCase):
 
@@ -41,13 +42,14 @@ class C11125(unittest.TestCase):
                 print(elem.value_of_css_property('color'))
                 self.assertEqual(elem.value_of_css_property('color'), "rgba(255, 0, 0, 1)")
                 self.assertEqual(driver.find_element_by_id("wrongId").text, "아이디에 한글 또는 특수문자가 포함되어 있습니다.")
-        except NoSuchElementException:  # 엘리먼트 없으면 회원 가입 창 닫음
-            driver.find_element_by_id("modalClose").click()
+        except NoSuchElementException:  # 엘리먼트 없으면 id입력창에 테스트 성공 입력
+            driver.find_element_by_id("id").clear()
+            driver.find_element_by_id("id").send_keys("테스트 성공")
         time.sleep(2)
+        
     # TestRail 결과 입력
     # try :
-    #     self.assertEqual(elem.value_of_css_property('color'), "rgba(255, 0, 0, 1)")
-    #     self.assertEqual(driver.find_element_by_id("wrongId").text, "아이디에 한글 또는 특수문자가 포함되어 있습니다.")
+    #     self.assertEqual(driver.find_element_by_id("id").text, "테스트 성공")
     #     status_id = 1
     # except :
     #     status_id = 5
@@ -57,5 +59,16 @@ class C11125(unittest.TestCase):
     #     {'status_id': status_id, 'comment': msg,})
     # print('\n Run ID : %s\n Test Case ID: %s\n Message : %s\n' % (run_id, case_id, msg))
 
-
+    # Test Rail 결과 메세지 입력
+    # if status_id == 1:
+    #     print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (run_id, case_id, passMsg))
+    #     client.send_post(
+    #         'add_result_for_case/%s/%s' % (run_id, case_id),
+    #         {'status_id': status_id, 'comment': passMsg, })
+    #
+    # elif status_id == 5:
+    #     print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (run_id, case_id, failMsg))
+    #     client.send_post(
+    #         'add_result_for_case/%s/%s' % (run_id, case_id),
+    #         {'status_id': status_id, 'comment': failMsg, })
 

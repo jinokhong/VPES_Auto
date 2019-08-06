@@ -16,8 +16,9 @@ from testrail import *
 
 # TestRail run_id, Testcase_id, Message 정보
 # run_id = 240
-# case_id = 11113
-# msg = 'Test Auto Checking'
+# case_id = 11115
+# passMsg = 'Test Run Success !!'
+# failMsg = 'Test Run Fail !!'
 
 class C11115(unittest.TestCase):
 
@@ -33,6 +34,8 @@ class C11115(unittest.TestCase):
         element = driver.find_element_by_id("btnContactUs")
         self.assertEqual(element.is_enabled(), False)
         time.sleep(2)
+
+
     # TestRail 결과 입력
     # try :
     #     self.assertEqual(element.is_enabled(), False)
@@ -45,5 +48,17 @@ class C11115(unittest.TestCase):
     #     {'status_id': status_id, 'comment': msg,})
     # print('\n Run ID : %s\n Test Case ID: %s\n Message : %s\n' % (run_id, case_id, msg))
 
+    # Test Rail 결과 메세지 입력
+    # if status_id == 1:
+    #     print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (run_id, case_id, passMsg))
+    #     client.send_post(
+    #         'add_result_for_case/%s/%s' % (run_id, case_id),
+    #         {'status_id': status_id, 'comment': passMsg, })
+    #
+    # elif status_id == 5:
+    #     print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (run_id, case_id, failMsg))
+    #     client.send_post(
+    #         'add_result_for_case/%s/%s' % (run_id, case_id),
+    #         {'status_id': status_id, 'comment': failMsg, })
 
 
