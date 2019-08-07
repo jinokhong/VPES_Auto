@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ct.ControllerTesterResult>
+	<summary>
+		<prjName></prjName>
+		<toolName>CodeScroll Controller Tester RTV(Remote Target Verifier) + Target Plugin</toolName>
+		<toolVersion>3.0.6</toolVersion>
+		<statementCov>58.59</statementCov>
+		<branchCov>30.76</branchCov>
+		<mcdcCov>13.46</mcdcCov>
+	</summary>
+	<source>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFile.c</fileName>
+		<crc32>898544e4</crc32>
+	</source>
+	<source>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFind.c</fileName>
+		<crc32>6976e5cc</crc32>
+	</source>
+	<source>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFont.c</fileName>
+		<crc32>39c5d574</crc32>
+	</source>
+	<source>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopPad.c</fileName>
+		<crc32>3c42444e</crc32>
+	</source>
+	<source>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopPrnt0.c</fileName>
+		<crc32>14577fb4</crc32>
+	</source>
+	<source>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\RESOURCE.H</fileName>
+		<crc32>736f64f7</crc32>
+	</source>
+	<functionCoverage>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopPad.c</fileName>
+		<function><![CDATA[AboutDlgProc(struct HWND__ *, unsigned int, unsigned int __w64, signed long __w64)]]></function>
+		<functionStartLine>439</functionStartLine>
+		<functionEndLine>457</functionEndLine>
+		<statementCov>90.00</statementCov>
+		<branchCov>80.00</branchCov>
+		<mcdcCov>-1.00</mcdcCov>
+		<totalStatementCnt>10</totalStatementCnt>
+		<coveredStatementCnt>9</coveredStatementCnt>
+		<totalBranchCnt>5</totalBranchCnt>
+		<coveredBranchCnt>4</coveredBranchCnt>
+		<totalMcdcCnt>0</totalMcdcCnt>
+		<coveredMcdcCnt>0</coveredMcdcCnt>
+		<coveredStatementList>451,452,442,444,456,445,447,448,450</coveredStatementList>
+		<unCoveredStatementList>454</unCoveredStatementList>
+		<coveredBranchList></coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopPad.c</fileName>
+		<function><![CDATA[AskAboutSave(struct HWND__ *, unsigned short *)]]></function>
+		<functionStartLine>119</functionStartLine>
+		<functionEndLine>135</functionEndLine>
+		<statementCov>75.00</statementCov>
+		<branchCov>50.00</branchCov>
+		<mcdcCov>33.33</mcdcCov>
+		<totalStatementCnt>8</totalStatementCnt>
+		<coveredStatementCnt>6</coveredStatementCnt>
+		<totalBranchCnt>6</totalBranchCnt>
+		<coveredBranchCnt>3</coveredBranchCnt>
+		<totalMcdcCnt>3</totalMcdcCnt>
+		<coveredMcdcCnt>1</coveredMcdcCnt>
+		<coveredStatementList>121,122,134,124,125,127,128,130</coveredStatementList>
+		<unCoveredStatementList>132,131</unCoveredStatementList>
+		<coveredBranchList>130:F,125:TF</coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopPad.c</fileName>
+		<function><![CDATA[DoCaption(struct HWND__ *, unsigned short *)]]></function>
+		<functionStartLine>100</functionStartLine>
+		<functionEndLine>108</functionEndLine>
+		<statementCov>100.00</statementCov>
+		<branchCov>100.00</branchCov>
+		<mcdcCov>100.00</mcdcCov>
+		<totalStatementCnt>3</totalStatementCnt>
+		<coveredStatementCnt>3</coveredStatementCnt>
+		<totalBranchCnt>2</totalBranchCnt>
+		<coveredBranchCnt>2</coveredBranchCnt>
+		<totalMcdcCnt>1</totalMcdcCnt>
+		<coveredMcdcCnt>1</coveredMcdcCnt>
+		<coveredStatementList>102,104,105,107</coveredStatementList>
+		<unCoveredStatementList></unCoveredStatementList>
+		<coveredBranchList>105:TF</coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopPad.c</fileName>
+		<function><![CDATA[OkMessage(struct HWND__ *, unsigned short *, unsigned short *)]]></function>
+		<functionStartLine>110</functionStartLine>
+		<functionEndLine>117</functionEndLine>
+		<statementCov>100.00</statementCov>
+		<branchCov>100.00</branchCov>
+		<mcdcCov>100.00</mcdcCov>
+		<totalStatementCnt>3</totalStatementCnt>
+		<coveredStatementCnt>3</coveredStatementCnt>
+		<totalBranchCnt>2</totalBranchCnt>
+		<coveredBranchCnt>2</coveredBranchCnt>
+		<totalMcdcCnt>1</totalMcdcCnt>
+		<coveredMcdcCnt>1</coveredMcdcCnt>
+		<coveredStatementList>112,114,116</coveredStatementList>
+		<unCoveredStatementList></unCoveredStatementList>
+		<coveredBranchList>114:TF</coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFile.c</fileName>
+		<function><![CDATA[PopFileInitialize(struct HWND__ *)]]></function>
+		<functionStartLine>10</functionStartLine>
+		<functionEndLine>37</functionEndLine>
+		<statementCov>100.00</statementCov>
+		<branchCov>-1.00</branchCov>
+		<mcdcCov>-1.00</mcdcCov>
+		<totalStatementCnt>21</totalStatementCnt>
+		<coveredStatementCnt>21</coveredStatementCnt>
+		<totalBranchCnt>0</totalBranchCnt>
+		<coveredBranchCnt>0</coveredBranchCnt>
+		<totalMcdcCnt>0</totalMcdcCnt>
+		<coveredMcdcCnt>0</coveredMcdcCnt>
+		<coveredStatementList>22,33,23,34,12,13,24,35,14,25,26,16,27,17,28,18,29,19,30,20,31,21,32</coveredStatementList>
+		<unCoveredStatementList></unCoveredStatementList>
+		<coveredBranchList></coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFile.c</fileName>
+		<function><![CDATA[PopFileOpenDlg(struct HWND__ *, unsigned short *, unsigned short *)]]></function>
+		<functionStartLine>39</functionStartLine>
+		<functionEndLine>47</functionEndLine>
+		<statementCov>100.00</statementCov>
+		<branchCov>-1.00</branchCov>
+		<mcdcCov>-1.00</mcdcCov>
+		<totalStatementCnt>5</totalStatementCnt>
+		<coveredStatementCnt>5</coveredStatementCnt>
+		<totalBranchCnt>0</totalBranchCnt>
+		<coveredBranchCnt>0</coveredBranchCnt>
+		<totalMcdcCnt>0</totalMcdcCnt>
+		<coveredMcdcCnt>0</coveredMcdcCnt>
+		<coveredStatementList>44,46,41,42,43</coveredStatementList>
+		<unCoveredStatementList></unCoveredStatementList>
+		<coveredBranchList></coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFile.c</fileName>
+		<function><![CDATA[PopFileRead(struct HWND__ *, unsigned short *)]]></function>
+		<functionStartLine>59</functionStartLine>
+		<functionEndLine>148</functionEndLine>
+		<statementCov>21.21</statementCov>
+		<branchCov>12.50</branchCov>
+		<mcdcCov>0.00</mcdcCov>
+		<totalStatementCnt>33</totalStatementCnt>
+		<coveredStatementCnt>7</coveredStatementCnt>
+		<totalBranchCnt>8</totalBranchCnt>
+		<coveredBranchCnt>1</coveredBranchCnt>
+		<totalMcdcCnt>4</totalMcdcCnt>
+		<coveredMcdcCnt>0</coveredMcdcCnt>
+		<coveredStatementList>69,70,71,72,61,62,63,64,65</coveredStatementList>
+		<unCoveredStatementList>89,134,135,91,119,93,94,96,98,77,78,143,144,100,145,101,102,147,125,129,108,82,83,84,85</unCoveredStatementList>
+		<coveredBranchList>69:T</coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFile.c</fileName>
+		<function><![CDATA[PopFileSaveDlg(struct HWND__ *, unsigned short *, unsigned short *)]]></function>
+		<functionStartLine>49</functionStartLine>
+		<functionEndLine>57</functionEndLine>
+		<statementCov>100.00</statementCov>
+		<branchCov>-1.00</branchCov>
+		<mcdcCov>-1.00</mcdcCov>
+		<totalStatementCnt>5</totalStatementCnt>
+		<coveredStatementCnt>5</coveredStatementCnt>
+		<totalBranchCnt>0</totalBranchCnt>
+		<coveredBranchCnt>0</coveredBranchCnt>
+		<totalMcdcCnt>0</totalMcdcCnt>
+		<coveredMcdcCnt>0</coveredMcdcCnt>
+		<coveredStatementList>56,51,52,53,54</coveredStatementList>
+		<unCoveredStatementList></unCoveredStatementList>
+		<coveredBranchList></coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFile.c</fileName>
+		<function><![CDATA[PopFileWrite(struct HWND__ *, unsigned short *)]]></function>
+		<functionStartLine>150</functionStartLine>
+		<functionEndLine>201</functionEndLine>
+		<statementCov>77.27</statementCov>
+		<branchCov>66.66</branchCov>
+		<mcdcCov>33.33</mcdcCov>
+		<totalStatementCnt>22</totalStatementCnt>
+		<coveredStatementCnt>17</coveredStatementCnt>
+		<totalBranchCnt>6</totalBranchCnt>
+		<coveredBranchCnt>4</coveredBranchCnt>
+		<totalMcdcCnt>3</totalMcdcCnt>
+		<coveredMcdcCnt>1</coveredMcdcCnt>
+		<coveredStatementList>190,181,160,171,161,162,163,152,186,153,197,187,198,154,155,188,200,156,168,169</coveredStatementList>
+		<unCoveredStatementList>192,193,194,173,174</unCoveredStatementList>
+		<coveredBranchList>190:F,171:F,160:TF</coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFind.c</fileName>
+		<function><![CDATA[PopFindFindDlg(struct HWND__ *)]]></function>
+		<functionStartLine>14</functionStartLine>
+		<functionEndLine>31</functionEndLine>
+		<statementCov>100.00</statementCov>
+		<branchCov>-1.00</branchCov>
+		<mcdcCov>-1.00</mcdcCov>
+		<totalStatementCnt>13</totalStatementCnt>
+		<coveredStatementCnt>13</coveredStatementCnt>
+		<totalBranchCnt>0</totalBranchCnt>
+		<coveredBranchCnt>0</coveredBranchCnt>
+		<totalMcdcCnt>0</totalMcdcCnt>
+		<coveredMcdcCnt>0</coveredMcdcCnt>
+		<coveredStatementList>22,23,24,25,26,27,16,28,18,19,30,20,21</coveredStatementList>
+		<unCoveredStatementList></unCoveredStatementList>
+		<coveredBranchList></coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFind.c</fileName>
+		<function><![CDATA[PopFindFindText(struct HWND__ *, signed int *, struct tagFINDREPLACEW *)]]></function>
+		<functionStartLine>52</functionStartLine>
+		<functionEndLine>87</functionEndLine>
+		<statementCov>93.33</statementCov>
+		<branchCov>75.00</branchCov>
+		<mcdcCov>50.00</mcdcCov>
+		<totalStatementCnt>15</totalStatementCnt>
+		<coveredStatementCnt>14</coveredStatementCnt>
+		<totalBranchCnt>4</totalBranchCnt>
+		<coveredBranchCnt>3</coveredBranchCnt>
+		<totalMcdcCnt>2</totalMcdcCnt>
+		<coveredMcdcCnt>1</coveredMcdcCnt>
+		<coveredStatementList>55,78,68,79,69,59,83,61,84,73,74,64,86,54</coveredStatementList>
+		<unCoveredStatementList>62</unCoveredStatementList>
+		<coveredBranchList>61:F,73:TF</coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFind.c</fileName>
+		<function><![CDATA[PopFindNextText(struct HWND__ *, signed int *)]]></function>
+		<functionStartLine>89</functionStartLine>
+		<functionEndLine>96</functionEndLine>
+		<statementCov>100.00</statementCov>
+		<branchCov>-1.00</branchCov>
+		<mcdcCov>-1.00</mcdcCov>
+		<totalStatementCnt>3</totalStatementCnt>
+		<coveredStatementCnt>3</coveredStatementCnt>
+		<totalBranchCnt>0</totalBranchCnt>
+		<coveredBranchCnt>0</coveredBranchCnt>
+		<totalMcdcCnt>0</totalMcdcCnt>
+		<coveredMcdcCnt>0</coveredMcdcCnt>
+		<coveredStatementList>91,93,95</coveredStatementList>
+		<unCoveredStatementList></unCoveredStatementList>
+		<coveredBranchList></coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFind.c</fileName>
+		<function><![CDATA[PopFindReplaceDlg(struct HWND__ *)]]></function>
+		<functionStartLine>33</functionStartLine>
+		<functionEndLine>50</functionEndLine>
+		<statementCov>100.00</statementCov>
+		<branchCov>-1.00</branchCov>
+		<mcdcCov>-1.00</mcdcCov>
+		<totalStatementCnt>13</totalStatementCnt>
+		<coveredStatementCnt>13</coveredStatementCnt>
+		<totalBranchCnt>0</totalBranchCnt>
+		<coveredBranchCnt>0</coveredBranchCnt>
+		<totalMcdcCnt>0</totalMcdcCnt>
+		<coveredMcdcCnt>0</coveredMcdcCnt>
+		<coveredStatementList>44,45,46,35,47,37,38,49,39,40,41,42,43</coveredStatementList>
+		<unCoveredStatementList></unCoveredStatementList>
+		<coveredBranchList></coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFind.c</fileName>
+		<function><![CDATA[PopFindReplaceText(struct HWND__ *, signed int *, struct tagFINDREPLACEW *)]]></function>
+		<functionStartLine>98</functionStartLine>
+		<functionEndLine>110</functionEndLine>
+		<statementCov>25.00</statementCov>
+		<branchCov>0.00</branchCov>
+		<mcdcCov>0.00</mcdcCov>
+		<totalStatementCnt>4</totalStatementCnt>
+		<coveredStatementCnt>1</coveredStatementCnt>
+		<totalBranchCnt>2</totalBranchCnt>
+		<coveredBranchCnt>0</coveredBranchCnt>
+		<totalMcdcCnt>1</totalMcdcCnt>
+		<coveredMcdcCnt>0</coveredMcdcCnt>
+		<coveredStatementList>102</coveredStatementList>
+		<unCoveredStatementList>103,107,109</unCoveredStatementList>
+		<coveredBranchList>102:-</coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFind.c</fileName>
+		<function><![CDATA[PopFindValidFind()]]></function>
+		<functionStartLine>112</functionStartLine>
+		<functionEndLine>115</functionEndLine>
+		<statementCov>100.00</statementCov>
+		<branchCov>-1.00</branchCov>
+		<mcdcCov>-1.00</mcdcCov>
+		<totalStatementCnt>1</totalStatementCnt>
+		<coveredStatementCnt>1</coveredStatementCnt>
+		<totalBranchCnt>0</totalBranchCnt>
+		<coveredBranchCnt>0</coveredBranchCnt>
+		<totalMcdcCnt>0</totalMcdcCnt>
+		<coveredMcdcCnt>0</coveredMcdcCnt>
+		<coveredStatementList>114</coveredStatementList>
+		<unCoveredStatementList></unCoveredStatementList>
+		<coveredBranchList></coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFont.c</fileName>
+		<function><![CDATA[PopFontChooseFont(struct HWND__ *)]]></function>
+		<functionStartLine>11</functionStartLine>
+		<functionEndLine>32</functionEndLine>
+		<statementCov>100.00</statementCov>
+		<branchCov>-1.00</branchCov>
+		<mcdcCov>-1.00</mcdcCov>
+		<totalStatementCnt>17</totalStatementCnt>
+		<coveredStatementCnt>17</coveredStatementCnt>
+		<totalBranchCnt>0</totalBranchCnt>
+		<coveredBranchCnt>0</coveredBranchCnt>
+		<totalMcdcCnt>0</totalMcdcCnt>
+		<coveredMcdcCnt>0</coveredMcdcCnt>
+		<coveredStatementList>22,23,24,13,25,15,26,16,27,17,28,18,29,19,20,31,21</coveredStatementList>
+		<unCoveredStatementList></unCoveredStatementList>
+		<coveredBranchList></coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFont.c</fileName>
+		<function><![CDATA[PopFontDeinitialize()]]></function>
+		<functionStartLine>56</functionStartLine>
+		<functionEndLine>59</functionEndLine>
+		<statementCov>100.00</statementCov>
+		<branchCov>-1.00</branchCov>
+		<mcdcCov>-1.00</mcdcCov>
+		<totalStatementCnt>1</totalStatementCnt>
+		<coveredStatementCnt>1</coveredStatementCnt>
+		<totalBranchCnt>0</totalBranchCnt>
+		<coveredBranchCnt>0</coveredBranchCnt>
+		<totalMcdcCnt>0</totalMcdcCnt>
+		<coveredMcdcCnt>0</coveredMcdcCnt>
+		<coveredStatementList>58</coveredStatementList>
+		<unCoveredStatementList></unCoveredStatementList>
+		<coveredBranchList></coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFont.c</fileName>
+		<function><![CDATA[PopFontInitialize(struct HWND__ *)]]></function>
+		<functionStartLine>34</functionStartLine>
+		<functionEndLine>41</functionEndLine>
+		<statementCov>100.00</statementCov>
+		<branchCov>-1.00</branchCov>
+		<mcdcCov>-1.00</mcdcCov>
+		<totalStatementCnt>3</totalStatementCnt>
+		<coveredStatementCnt>3</coveredStatementCnt>
+		<totalBranchCnt>0</totalBranchCnt>
+		<coveredBranchCnt>0</coveredBranchCnt>
+		<totalMcdcCnt>0</totalMcdcCnt>
+		<coveredMcdcCnt>0</coveredMcdcCnt>
+		<coveredStatementList>36,37,39,40</coveredStatementList>
+		<unCoveredStatementList></unCoveredStatementList>
+		<coveredBranchList></coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFont.c</fileName>
+		<function><![CDATA[PopFontSetFont(struct HWND__ *)]]></function>
+		<functionStartLine>43</functionStartLine>
+		<functionEndLine>54</functionEndLine>
+		<statementCov>100.00</statementCov>
+		<branchCov>-1.00</branchCov>
+		<mcdcCov>-1.00</mcdcCov>
+		<totalStatementCnt>8</totalStatementCnt>
+		<coveredStatementCnt>8</coveredStatementCnt>
+		<totalBranchCnt>0</totalBranchCnt>
+		<coveredBranchCnt>0</coveredBranchCnt>
+		<totalMcdcCnt>0</totalMcdcCnt>
+		<coveredMcdcCnt>0</coveredMcdcCnt>
+		<coveredStatementList>45,46,48,49,50,51,52,53</coveredStatementList>
+		<unCoveredStatementList></unCoveredStatementList>
+		<coveredBranchList></coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopPrnt0.c</fileName>
+		<function><![CDATA[PopPrntPrintFile(struct HINSTANCE__ *, struct HWND__ *, struct HWND__ *, unsigned short *)]]></function>
+		<functionStartLine>7</functionStartLine>
+		<functionEndLine>11</functionEndLine>
+		<statementCov>100.00</statementCov>
+		<branchCov>-1.00</branchCov>
+		<mcdcCov>-1.00</mcdcCov>
+		<totalStatementCnt>1</totalStatementCnt>
+		<coveredStatementCnt>1</coveredStatementCnt>
+		<totalBranchCnt>0</totalBranchCnt>
+		<coveredBranchCnt>0</coveredBranchCnt>
+		<totalMcdcCnt>0</totalMcdcCnt>
+		<coveredMcdcCnt>0</coveredMcdcCnt>
+		<coveredStatementList>10</coveredStatementList>
+		<unCoveredStatementList></unCoveredStatementList>
+		<coveredBranchList></coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopPad.c</fileName>
+		<function><![CDATA[WinMain(struct HINSTANCE__ *, struct HINSTANCE__ *, char *, signed int)]]></function>
+		<functionStartLine>49</functionStartLine>
+		<functionEndLine>98</functionEndLine>
+		<statementCov>96.29</statementCov>
+		<branchCov>62.50</branchCov>
+		<mcdcCov>20.00</mcdcCov>
+		<totalStatementCnt>27</totalStatementCnt>
+		<coveredStatementCnt>26</coveredStatementCnt>
+		<totalBranchCnt>8</totalBranchCnt>
+		<coveredBranchCnt>5</coveredBranchCnt>
+		<totalMcdcCnt>5</totalMcdcCnt>
+		<coveredMcdcCnt>1</coveredMcdcCnt>
+		<coveredStatementList>66,88,68,90,70,92,71,93,72,52,53,75,54,55,57,58,59,81,60,82,61,62,84,63,64,86,65</coveredStatementList>
+		<unCoveredStatementList>97</unCoveredStatementList>
+		<coveredBranchList>88:T,86:T,68:TF,90:T</coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopPad.c</fileName>
+		<function><![CDATA[WndProc(struct HWND__ *, unsigned int, unsigned int __w64, signed long __w64)]]></function>
+		<functionStartLine>137</functionStartLine>
+		<functionEndLine>437</functionEndLine>
+		<statementCov>28.57</statementCov>
+		<branchCov>18.39</branchCov>
+		<mcdcCov>3.12</mcdcCov>
+		<totalStatementCnt>168</totalStatementCnt>
+		<coveredStatementCnt>48</coveredStatementCnt>
+		<totalBranchCnt>87</totalBranchCnt>
+		<coveredBranchCnt>16</coveredBranchCnt>
+		<totalMcdcCnt>32</totalMcdcCnt>
+		<coveredMcdcCnt>1</coveredMcdcCnt>
+		<coveredStatementList>171,392,150,172,151,393,394,174,175,396,176,231,155,398,178,179,399,412,434,139,414,436,416,180,182,183,140,162,141,142,143,144,166,243,145,167,146,169,400,224,148,226,404,405,229,406,407,409</coveredStatementList>
+		<unCoveredStatementList>190,191,195,196,197,353,354,233,355,234,356,235,358,237,359,238,239,240,361,362,241,364,366,246,368,369,402,370,371,250,251,373,252,374,375,254,255,256,377,257,258,259,417,419,381,382,261,383,262,263,384,265,386,387,420,267,388,421,301,422,269,303,424,304,425,426,427,308,429,309,390,270,271,272,276,430,277,310,278,432,313,315,316,317,318,319,280,281,283,285,286,321,322,201,202,323,204,206,327,328,207,208,329,209,290,291,292,296,297,331,332,299,211,333,335,336,216,337,217,339,219,185,340,220,341,221,189,343,222,344,345,347,348,349</unCoveredStatementList>
+		<coveredBranchList>412:TF,399:T,229:T,393:T,416:-</coveredBranchList>
+	</functionCoverage>
+</ct.ControllerTesterResult>

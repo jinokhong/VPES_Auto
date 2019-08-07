@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ct.ControllerTesterResult>
+	<summary>
+		<prjName></prjName>
+		<toolName>CodeScroll Controller Tester RTV(Remote Target Verifier) + Target Plugin</toolName>
+		<toolVersion>3.0.6</toolVersion>
+		<statementCov>80.00</statementCov>
+		<branchCov>50.00</branchCov>
+		<mcdcCov>0.00</mcdcCov>
+	</summary>
+	<source>
+		<fileName>D:\테스트 데이터\Stub_timeout.c</fileName>
+		<crc32>6a7a06dd</crc32>
+	</source>
+	<functionCoverage>
+		<fileName>D:\테스트 데이터\Stub_timeout.c</fileName>
+		<function><![CDATA[build_stub_test(signed int)]]></function>
+		<functionStartLine>39</functionStartLine>
+		<functionEndLine>49</functionEndLine>
+		<statementCov>80.00</statementCov>
+		<branchCov>50.00</branchCov>
+		<mcdcCov>0.00</mcdcCov>
+		<totalStatementCnt>5</totalStatementCnt>
+		<coveredStatementCnt>4</coveredStatementCnt>
+		<totalBranchCnt>2</totalBranchCnt>
+		<coveredBranchCnt>1</coveredBranchCnt>
+		<totalMcdcCnt>1</totalMcdcCnt>
+		<coveredMcdcCnt>0</coveredMcdcCnt>
+		<coveredStatementList>44,45,40,42</coveredStatementList>
+		<unCoveredStatementList>47</unCoveredStatementList>
+		<coveredBranchList>44:T</coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>D:\테스트 데이터\Stub_timeout.c</fileName>
+		<function><![CDATA[get_int()]]></function>
+		<functionStartLine>51</functionStartLine>
+		<functionEndLine>53</functionEndLine>
+		<statementCov>100.00</statementCov>
+		<branchCov>-1.00</branchCov>
+		<mcdcCov>-1.00</mcdcCov>
+		<totalStatementCnt>1</totalStatementCnt>
+		<coveredStatementCnt>1</coveredStatementCnt>
+		<totalBranchCnt>0</totalBranchCnt>
+		<coveredBranchCnt>0</coveredBranchCnt>
+		<totalMcdcCnt>0</totalMcdcCnt>
+		<coveredMcdcCnt>0</coveredMcdcCnt>
+		<coveredStatementList>52</coveredStatementList>
+		<unCoveredStatementList></unCoveredStatementList>
+		<coveredBranchList></coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>D:\테스트 데이터\Stub_timeout.c</fileName>
+		<function><![CDATA[testFunc(signed int)]]></function>
+		<functionStartLine>10</functionStartLine>
+		<functionEndLine>12</functionEndLine>
+		<statementCov>-1.00</statementCov>
+		<branchCov>-1.00</branchCov>
+		<mcdcCov>-1.00</mcdcCov>
+		<totalStatementCnt>0</totalStatementCnt>
+		<coveredStatementCnt>0</coveredStatementCnt>
+		<totalBranchCnt>0</totalBranchCnt>
+		<coveredBranchCnt>0</coveredBranchCnt>
+		<totalMcdcCnt>0</totalMcdcCnt>
+		<coveredMcdcCnt>0</coveredMcdcCnt>
+		<coveredStatementList></coveredStatementList>
+		<unCoveredStatementList></unCoveredStatementList>
+		<coveredBranchList></coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>D:\테스트 데이터\Stub_timeout.c</fileName>
+		<function><![CDATA[timeout()]]></function>
+		<functionStartLine>55</functionStartLine>
+		<functionEndLine>59</functionEndLine>
+		<statementCov>100.00</statementCov>
+		<branchCov>50.00</branchCov>
+		<mcdcCov>0.00</mcdcCov>
+		<totalStatementCnt>1</totalStatementCnt>
+		<coveredStatementCnt>1</coveredStatementCnt>
+		<totalBranchCnt>2</totalBranchCnt>
+		<coveredBranchCnt>1</coveredBranchCnt>
+		<totalMcdcCnt>1</totalMcdcCnt>
+		<coveredMcdcCnt>0</coveredMcdcCnt>
+		<coveredStatementList>56</coveredStatementList>
+		<unCoveredStatementList></unCoveredStatementList>
+		<coveredBranchList>56:T</coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>D:\테스트 데이터\Stub_timeout.c</fileName>
+		<function><![CDATA[user_stub_test_01()]]></function>
+		<functionStartLine>13</functionStartLine>
+		<functionEndLine>23</functionEndLine>
+		<statementCov>83.33</statementCov>
+		<branchCov>50.00</branchCov>
+		<mcdcCov>0.00</mcdcCov>
+		<totalStatementCnt>6</totalStatementCnt>
+		<coveredStatementCnt>5</coveredStatementCnt>
+		<totalBranchCnt>2</totalBranchCnt>
+		<coveredBranchCnt>1</coveredBranchCnt>
+		<totalMcdcCnt>1</totalMcdcCnt>
+		<coveredMcdcCnt>0</coveredMcdcCnt>
+		<coveredStatementList>14,16,17,18,19</coveredStatementList>
+		<unCoveredStatementList>21</unCoveredStatementList>
+		<coveredBranchList>18:T</coveredBranchList>
+	</functionCoverage>
+	<functionCoverage>
+		<fileName>D:\테스트 데이터\Stub_timeout.c</fileName>
+		<function><![CDATA[user_stub_test_02()]]></function>
+		<functionStartLine>25</functionStartLine>
+		<functionEndLine>37</functionEndLine>
+		<statementCov>71.42</statementCov>
+		<branchCov>50.00</branchCov>
+		<mcdcCov>0.00</mcdcCov>
+		<totalStatementCnt>7</totalStatementCnt>
+		<coveredStatementCnt>5</coveredStatementCnt>
+		<totalBranchCnt>4</totalBranchCnt>
+		<coveredBranchCnt>2</coveredBranchCnt>
+		<totalMcdcCnt>2</totalMcdcCnt>
+		<coveredMcdcCnt>0</coveredMcdcCnt>
+		<coveredStatementList>35,26,28,30,32</coveredStatementList>
+		<unCoveredStatementList>33,31</unCoveredStatementList>
+		<coveredBranchList>32:F,30:F</coveredBranchList>
+	</functionCoverage>
+</ct.ControllerTesterResult>
