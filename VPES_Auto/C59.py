@@ -56,7 +56,6 @@ class C59(unittest.TestCase):
         os.chdir('../VPES_Data')
         # 현재 파일의 폴더 위치 저장
         realpath = os.getcwd()
-
         # 파일 포함 경로 선언
         FullPath = realpath + fPath
         print(FullPath)
@@ -64,9 +63,16 @@ class C59(unittest.TestCase):
         p.driver.find_element_by_name("uploadfile").send_keys(FullPath)
         time.sleep(3)
         p.driver.find_element_by_id("btn-xml").click()
-        time.sleep(60)
+        time.sleep(2)
+        try:
+            element = WebDriverWait(p.driver, 60).until(
+                EC.visibility_of_element_located((By.ID, "modal-content"))
+            )
+        except TimeoutException:
+            print("타임아웃")
+        assert "업로드 되었습니다." in p.driver.find_element_by_id("modal-content").text
+        time.sleep(2)
         self.assertEqual(p.driver.find_element_by_class_name("btn.btn-success").is_displayed(),True)
-
         # p.tearDown()
 
 

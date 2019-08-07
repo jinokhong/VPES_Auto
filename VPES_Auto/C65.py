@@ -11,12 +11,12 @@ import unittest, time, re
 from testrail import *
 
 # TestRail run_id, Testcase_id, Message 정보
-# case_id = 61
+# case_id = 65
 
-fPath = "\CT_DIR_MIRO.xml"
+fPath = "\CI_DIR_MIRO.xml"
 
-class C61(unittest.TestCase):
-    def test_C61(self):
+class C65(unittest.TestCase):
+    def test_C65(self):
         p: default = default()
         p.setUp()
         p.test_project_init()
@@ -70,14 +70,17 @@ class C61(unittest.TestCase):
             )
         except TimeoutException:
             print("타임아웃")
-        assert "업로드 되었습니다." in p.driver.find_element_by_id("modal-content").text
+        assert "업로드하는데 실패했습니다." in p.driver.find_element_by_id("modal-content").text
         time.sleep(2)
-        self.assertEqual(p.driver.find_element_by_class_name("btn.btn-success").is_displayed(), True)
+        self.assertEqual("XML 데이터가 올바르지 않습니다.\n올바른 Controller Tester 데이터인지 확인하십시오.",p.driver.find_element_by_xpath("//div[@id='uploadResultList']/span[2]").text)
+        time.sleep(2)
+        self.assertEqual(p.driver.find_element_by_class_name("btn.btn-danger").is_displayed(), True)
+
 
 
 # TestRail 결과 입력
         # try :
-        #     self.assertEqual(p.driver.find_element_by_class_name("btn.btn-success").is_displayed(), True)
+        #     self.assertEqual(p.driver.find_element_by_class_name("btn.btn-danger").is_displayed(), True)
         #     status_id = 1
         # except :
         #     status_id = 5

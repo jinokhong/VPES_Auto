@@ -12,6 +12,7 @@ from testrail import *
 
 # TestRail run_id, Testcase_id, Message 정보
 # case_id = 60
+
 fPath = "\CT_SVN_Study.xml"
 
 class C60(unittest.TestCase):
@@ -62,7 +63,14 @@ class C60(unittest.TestCase):
         p.driver.find_element_by_name("uploadfile").send_keys(FullPath)
         time.sleep(3)
         p.driver.find_element_by_id("btn-xml").click()
-        time.sleep(60)
+        try:
+            element = WebDriverWait(p.driver, 60).until(
+                EC.visibility_of_element_located((By.ID, "modal-content"))
+            )
+        except TimeoutException:
+            print("타임아웃")
+        assert "업로드 되었습니다." in p.driver.find_element_by_id("modal-content").text
+        time.sleep(2)
         self.assertEqual(p.driver.find_element_by_class_name("btn.btn-success").is_displayed(), True)
         # p.tearDown()
 

@@ -28,7 +28,7 @@ class default(unittest.TestCase):
 
     def setUp(self):
         self.driver = webdriver.Chrome()
-        self.driver.implicitly_wait(30)
+        self.driver.implicitly_wait(90)
         self.driver.maximize_window()
 
     def test_project_init(self):

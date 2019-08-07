@@ -28,12 +28,9 @@ class default_user(unittest.TestCase):
         self.driver.maximize_window()
 
     def test_user_init(self):
-        """
 
-        :rtype: object
-        """
         driver = self.driver
-        driver.get("http://211.116.223.190:18080/vpes") # VPES 서버 진입
+        driver.get("http://211.116.223.191:18080/vpes") # VPES 서버 진입
         driver.find_element_by_id("username").send_keys(usr) # 로그인
         driver.find_element_by_id("pwd").send_keys(pwd)
         driver.find_element_by_id("pwd").send_keys(Keys.RETURN)

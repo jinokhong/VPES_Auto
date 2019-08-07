@@ -11,12 +11,12 @@ import unittest, time, re
 from testrail import *
 
 # TestRail run_id, Testcase_id, Message 정보
-# case_id = 61
+# case_id = 72
 
-fPath = "\CT_DIR_MIRO.xml"
+fPath = "\CI_SCM 없음.xml"
 
-class C61(unittest.TestCase):
-    def test_C61(self):
+class C73(unittest.TestCase):
+    def test_C73(self):
         p: default = default()
         p.setUp()
         p.test_project_init()
@@ -43,7 +43,7 @@ class C61(unittest.TestCase):
         p.driver.find_element_by_link_text("검증 결과 업로드").click()
         time.sleep(2)
         p.driver.find_element_by_id("toolType").click()
-        Select(p.driver.find_element_by_id("toolType")).select_by_visible_text("Controller Tester")  # 드롭타운 선택
+        Select(p.driver.find_element_by_id("toolType")).select_by_visible_text("Code Inspector")  # 드롭타운 선택
         p.driver.find_element_by_id("toolType").click()
         time.sleep(3)
 
@@ -64,20 +64,23 @@ class C61(unittest.TestCase):
         time.sleep(3)
         p.driver.find_element_by_id("btn-xml").click()
         time.sleep(2)
-        try:
+        try: # 성공/실패 알림 팝업 뜰때까지 대기
             element = WebDriverWait(p.driver, 60).until(
                 EC.visibility_of_element_located((By.ID, "modal-content"))
             )
         except TimeoutException:
             print("타임아웃")
-        assert "업로드 되었습니다." in p.driver.find_element_by_id("modal-content").text
+        assert "업로드하는데 실패했습니다." in p.driver.find_element_by_id("modal-content").text
         time.sleep(2)
-        self.assertEqual(p.driver.find_element_by_class_name("btn.btn-success").is_displayed(), True)
+        self.assertEqual("- 대상 프로젝트{Selenium_DIR} 소스 형상의 업로드 위치를 확인 해 주십시오.\n    프로젝트 경로 : {VPES_PATH 설정 경로}\miro\n\n- SCM 에 미존재 하는 파일 목록\n    D:\테스트 데이터\Stub_timeout.c", p.driver.find_element_by_xpath("//div[@id='uploadResultList']/span[2]").text)
+        time.sleep(2)
+        self.assertEqual(p.driver.find_element_by_class_name("btn.btn-danger").is_displayed(), True)
+
 
 
 # TestRail 결과 입력
         # try :
-        #     self.assertEqual(p.driver.find_element_by_class_name("btn.btn-success").is_displayed(), True)
+        #     self.assertEqual(p.driver.find_element_by_class_name("btn.btn-danger").is_displayed(), True)
         #     status_id = 1
         # except :
         #     status_id = 5

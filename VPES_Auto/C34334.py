@@ -11,12 +11,12 @@ import unittest, time, re
 from testrail import *
 
 # TestRail run_id, Testcase_id, Message 정보
-# case_id = 61
+# case_id = 34333
 
-fPath = "\CT_DIR_MIRO.xml"
+fPath = "\CI_DIR_MIRO.xml"
 
-class C61(unittest.TestCase):
-    def test_C61(self):
+class C34334(unittest.TestCase):
+    def test_C34334(self):
         p: default = default()
         p.setUp()
         p.test_project_init()
@@ -43,7 +43,7 @@ class C61(unittest.TestCase):
         p.driver.find_element_by_link_text("검증 결과 업로드").click()
         time.sleep(2)
         p.driver.find_element_by_id("toolType").click()
-        Select(p.driver.find_element_by_id("toolType")).select_by_visible_text("Controller Tester")  # 드롭타운 선택
+        Select(p.driver.find_element_by_id("toolType")).select_by_visible_text("Code Inspector")  # 드롭타운 선택
         p.driver.find_element_by_id("toolType").click()
         time.sleep(3)
 
