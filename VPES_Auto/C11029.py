@@ -32,7 +32,7 @@ class C11029(unittest.TestCase):
 
     def test_C11029(self):
         driver = self.driver
-        driver.get("http://211.116.223.191:18080/vpes")  # VPES 서버 진입
+        driver.get("http://211.116.223.190:18080/vpes")  # VPES 서버 진입
         driver.find_element_by_id("username").send_keys(usr)  # 로그인
         driver.find_element_by_id("pwd").send_keys(pwd)
         driver.find_element_by_id("pwd").send_keys(Keys.RETURN)
@@ -78,4 +78,9 @@ class C11029(unittest.TestCase):
     #         'add_result_for_case/%s/%s' % (run_id, case_id),
     #         {'status_id': status_id, 'comment': failMsg, })
 
+    def tearDown(self):
+        self.driver.quit()
+
+if __name__ == "__main__":
+    unittest.main()
 

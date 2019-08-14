@@ -67,4 +67,8 @@ class C11112(unittest.TestCase):
     #         'add_result_for_case/%s/%s' % (run_id, case_id),
     #         {'status_id': status_id, 'comment': failMsg, })
 
+    def tearDown(self):
+        self.driver.quit()
 
+if __name__ == "__main__":
+    unittest.main()

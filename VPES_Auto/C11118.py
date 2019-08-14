@@ -1,15 +1,8 @@
-from Default_User import *
-from Default_Setting import *
-from selenium import webdriver
-from selenium.common.exceptions import TimeoutException
-from selenium.webdriver.common.by import By
+import Default_User
+import Default_Setting
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import NoSuchElementException
-import unittest, time, re
-from testrail import *
+import unittest, time
 
 
 # TestRail run_id, Testcase_id, Message 정보
@@ -17,16 +10,17 @@ from testrail import *
 
 class C11118(unittest.TestCase):
     def test_C11118(self):
-        i: default = default() # 프로젝트 초기화
+        module = Default_Setting
+        i = Default_Setting.default() # 프로젝트 초기화
         i.setUp()
         i.test_project_init()
         i.driver.quit()
-        p: default_user = default_user() # qscroll을 제외한 사용자 삭제
+        p = Default_User.default_user() # qscroll을 제외한 사용자 삭제
         p.setUp()
         p.test_user_init()
         p.driver.get("http://211.116.223.190:18080/vpes")  # VPES 서버 진입
-        p.driver.find_element_by_id("username").send_keys(usr)  # 로그인
-        p.driver.find_element_by_id("pwd").send_keys(pwd)
+        p.driver.find_element_by_id("username").send_keys(module.usr)  # 로그인
+        p.driver.find_element_by_id("pwd").send_keys(module.pwd)
         p.driver.find_element_by_id("pwd").send_keys(Keys.RETURN)
         p.driver.find_element_by_link_text("전체현황").click()
         p.driver.find_element_by_id("projectCreate").click()
@@ -36,7 +30,7 @@ class C11118(unittest.TestCase):
         p.driver.find_element_by_id("scmType").click()
         p.driver.find_element_by_id("scmUrl").click()
         p.driver.find_element_by_id("scmUrl").clear()
-        p.driver.find_element_by_id("scmUrl").send_keys(scm_git)
+        p.driver.find_element_by_id("scmUrl").send_keys(module.scm_git)
         p.driver.find_element_by_id("BusinessName").click()
         p.driver.find_element_by_id("BusinessName").clear()
         p.driver.find_element_by_id("BusinessName").send_keys("Test_11118")
@@ -85,4 +79,8 @@ class C11118(unittest.TestCase):
     #         'add_result_for_case/%s/%s' % (run_id, case_id),
     #         {'status_id': status_id, 'comment': failMsg, })
 
+    def tearDown(self):
+        self.driver.quit()
 
+if __name__ == "__main__":
+    unittest.main()

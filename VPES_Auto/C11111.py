@@ -1,14 +1,5 @@
-from Default_User import *
-from selenium import webdriver
-from selenium.common.exceptions import TimeoutException
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import Select
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import NoSuchElementException
-import unittest, time, re
-from testrail import *
+import Default_User
+import unittest, time
 
 
 # TestRail run_id, Testcase_id, Message 정보
@@ -16,7 +7,7 @@ from testrail import *
 
 class C11111(unittest.TestCase):
     def test_C11111(self):
-        p: default_user = default_user()
+        p = Default_User.default_user()
         p.setUp()
         p.test_user_init()
         p.driver.get("http://211.116.223.190:18080/vpes") # VPES 서버 진입
@@ -57,4 +48,8 @@ class C11111(unittest.TestCase):
     #         'add_result_for_case/%s/%s' % (run_id, case_id),
     #         {'status_id': status_id, 'comment': failMsg, })
 
+    def tearDown(self):
+        self.driver.quit()
 
+if __name__ == "__main__":
+    unittest.main()

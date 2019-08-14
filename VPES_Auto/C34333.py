@@ -1,14 +1,11 @@
-from Default_Setting import *
-from selenium import webdriver
+import Default_Setting
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import NoSuchElementException
-import unittest, time, re
-from testrail import *
+import unittest, time
+import os
 
 # TestRail run_id, Testcase_id, Message 정보
 # case_id = 34333
@@ -16,7 +13,8 @@ fPath = "\CI_SVN_Study.xml"
 
 class C34333(unittest.TestCase):
     def test_C34333(self):
-        p: default = default()
+        module = Default_Setting
+        p = Default_Setting.default()
         p.setUp()
         p.test_project_init()
         p.driver.find_element_by_id("projectCreate").click()
@@ -26,7 +24,7 @@ class C34333(unittest.TestCase):
         p.driver.find_element_by_id("scmType").click()
         p.driver.find_element_by_id("scmUrl").click()
         p.driver.find_element_by_id("scmUrl").clear()
-        p.driver.find_element_by_id("scmUrl").send_keys(scm_svn)
+        p.driver.find_element_by_id("scmUrl").send_keys(module.scm_svn)
         p.driver.find_element_by_id("BusinessName").click()
         p.driver.find_element_by_id("BusinessName").clear()
         p.driver.find_element_by_id("BusinessName").send_keys("Selenium")
@@ -98,6 +96,9 @@ class C34333(unittest.TestCase):
     #     client.send_post(
     #         'add_result_for_case/%s/%s' % (run_id, case_id),
     #         {'status_id': status_id, 'comment': failMsg, })
+
+    def tearDown(self):
+        self.driver.quit()
 
 if __name__ == "__main__":
     unittest.main()
