@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import unittest, time
 import os
 
-# TestRail run_id, Testcase_id, Message 정보
+# TestRail module.run_id, Testmodule.case_id, Message 정보
 # case_id = 63
 
 fPath = "\CT_DIR_MIRO.xml"
@@ -78,14 +78,14 @@ class C66(unittest.TestCase):
 # TestRail 결과 입력
         # try :
         #     self.assertEqual(p.driver.find_element_by_class_name("btn.btn-danger").is_displayed(), True)
-        #     status_id = 1
+        #     module.status_id = 1
         # except :
-        #     status_id = 5
+        #     module.status_id = 5
         #
-        # client.send_post(
-        #     'add_result_for_case/%s/%s' % (run_id, case_id),
-        #     {'status_id': status_id, 'comment': msg,})
-        # print('\n Run ID : %s\n Test Case ID: %s\n Message : %s\n' % (run_id, case_id, msg))
+        # module.client.send_post(
+        #     'add_result_for_case/%s/%s' % (module.run_id, module.case_id),
+        #     {'module.status_id': module.status_id, 'comment': msg,})
+        # print('\n Run ID : %s\n Test Case ID: %s\n Message : %s\n' % (module.run_id, module.case_id, msg))
 
         def tearDown(self):
             self.driver.quit()

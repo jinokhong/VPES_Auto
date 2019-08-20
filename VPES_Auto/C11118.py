@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import Select
 import unittest, time
 
 
-# TestRail run_id, Testcase_id, Message 정보
+# TestRail module.run_id, Testmodule.case_id, Message 정보
 # case_id = 11118
 
 class C11118(unittest.TestCase):
@@ -57,27 +57,27 @@ class C11118(unittest.TestCase):
     # try :
     #     assert "Test_11118" in p.driver.find_element_by_xpath("//tbody[@id='my-tbody']/tr/td").text
     #     assert "GIT" in p.driver.find_element_by_xpath("//tbody[@id='my-tbody']/tr/td[2]").text
-    #     status_id = 1
+    #     module.status_id = 1
     # except :
-    #     status_id = 5
+    #     module.status_id = 5
     #
-    # client.send_post(
-    #     'add_result_for_case/%s/%s' % (run_id, case_id),
-    #     {'status_id': status_id, 'comment': msg,})
-    # print('\n Run ID : %s\n Test Case ID: %s\n Message : %s\n' % (run_id, case_id, msg))
+    # module.client.send_post(
+    #     'add_result_for_case/%s/%s' % (module.run_id, module.case_id),
+    #     {'module.status_id': module.status_id, 'comment': msg,})
+    # print('\n Run ID : %s\n Test Case ID: %s\n Message : %s\n' % (module.run_id, module.case_id, msg))
 
     # Test Rail 결과 메세지 입력
-    # if status_id == 1:
-    #     print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (run_id, case_id, passMsg))
-    #     client.send_post(
-    #         'add_result_for_case/%s/%s' % (run_id, case_id),
-    #         {'status_id': status_id, 'comment': passMsg, })
+    # if module.status_id == 1:
+    #     print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (module.run_id, module.case_id, module.passMsg))
+    #     module.client.send_post(
+    #         'add_result_for_case/%s/%s' % (module.run_id, module.case_id),
+    #         {'module.status_id': module.status_id, 'comment': module.passMsg })
     #
-    # elif status_id == 5:
-    #     print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (run_id, case_id, failMsg))
-    #     client.send_post(
-    #         'add_result_for_case/%s/%s' % (run_id, case_id),
-    #         {'status_id': status_id, 'comment': failMsg, })
+    # elif module.status_id == 5:
+    #     print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (module.run_id, module.case_id, module.failMsg))
+    #     module.client.send_post(
+    #         'add_result_for_case/%s/%s' % (module.run_id, module.case_id),
+    #         {'module.status_id': module.status_id, 'comment': module.failMsg })
 
     def tearDown(self):
         self.driver.quit()

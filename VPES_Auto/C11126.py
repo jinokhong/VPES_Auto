@@ -14,11 +14,11 @@ from testrail import *
 # client.user = 'johong@suresofttech.com'
 # client.password = '12345'
 
-# TestRail run_id, Testcase_id, Message 정보
-# run_id = 240
+# TestRail module.run_id, Testmodule.case_id, Message 정보
+# module.run_id = 240
 # case_id = 11122
-# passMsg = 'Test Run Success !!'
-# failMsg = 'Test Run Fail !!'
+# module.passMsg = 'Test Run Success !!'
+# module.failMsg = 'Test Run Fail !!'
 
 class C11126(unittest.TestCase):
     def setUp(self):
@@ -55,27 +55,27 @@ class C11126(unittest.TestCase):
     #     self.assertEqual(driver.find_element_by_id("password").text, "")
     #     self.assertEqual(driver.find_element_by_id("surePassword").text, "")
     #     self.assertEqual(driver.find_element_by_id("name").text, "")
-    #     status_id = 1
+    #     module.status_id = 1
     # except :
-    #     status_id = 5
+    #     module.status_id = 5
     #
-    # client.send_post(
-    #     'add_result_for_case/%s/%s' % (run_id, case_id),
-    #     {'status_id': status_id, 'comment': msg,})
-    # print('\n Run ID : %s\n Test Case ID: %s\n Message : %s\n' % (run_id, case_id, msg))
+    # module.client.send_post(
+    #     'add_result_for_case/%s/%s' % (module.run_id, module.case_id),
+    #     {'module.status_id': module.status_id, 'comment': msg,})
+    # print('\n Run ID : %s\n Test Case ID: %s\n Message : %s\n' % (module.run_id, module.case_id, msg))
 
     # Test Rail 결과 메세지 입력
-    # if status_id == 1:
-    #     print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (run_id, case_id, passMsg))
-    #     client.send_post(
-    #         'add_result_for_case/%s/%s' % (run_id, case_id),
-    #         {'status_id': status_id, 'comment': passMsg, })
+    # if module.status_id == 1:
+    #     print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (module.run_id, module.case_id, module.passMsg))
+    #     module.client.send_post(
+    #         'add_result_for_case/%s/%s' % (module.run_id, module.case_id),
+    #         {'module.status_id': module.status_id, 'comment': module.passMsg })
     #
-    # elif status_id == 5:
-    #     print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (run_id, case_id, failMsg))
-    #     client.send_post(
-    #         'add_result_for_case/%s/%s' % (run_id, case_id),
-    #         {'status_id': status_id, 'comment': failMsg, })
+    # elif module.status_id == 5:
+    #     print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (module.run_id, module.case_id, module.failMsg))
+    #     module.client.send_post(
+    #         'add_result_for_case/%s/%s' % (module.run_id, module.case_id),
+    #         {'module.status_id': module.status_id, 'comment': module.failMsg })
 
     def tearDown(self):
         self.driver.quit()
