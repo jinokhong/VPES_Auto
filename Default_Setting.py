@@ -16,7 +16,7 @@ import os
 # client.password = '12345'
 # passMsg = 'Test Run Success !!'
 # failMsg = 'Test Run Fail !!'
-# run_id = 240
+# run_id = 372
 
 usr = "qscroll"
 pwd = "sure"
@@ -33,7 +33,7 @@ class default(unittest.TestCase):
 
     def test_project_init(self):
         driver = self.driver
-        driver.get("http://211.116.223.190:18080/vpes") # VPES 서버 진입
+        driver.get("http://211.116.223.191:18080/vpes") # VPES 서버 진입
         driver.find_element_by_id("username").send_keys(usr) # 로그인
         driver.find_element_by_id("pwd").send_keys(pwd)
         driver.find_element_by_id("pwd").send_keys(Keys.RETURN)

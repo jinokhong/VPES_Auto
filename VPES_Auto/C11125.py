@@ -10,15 +10,15 @@ import unittest, time, re
 from testrail import *
 
 # TestRail 접속 정보
-# client = APIClient('http://211.116.223.42/testrail')
-# client.user = 'johong@suresofttech.com'
-# client.password = '12345'
+client = APIClient('http://211.116.223.42/testrail')
+client.user = 'johong@suresofttech.com'
+client.password = '12345'
 
 # TestRail module.run_id, Testmodule.case_id, Message 정보
-# module.run_id = 240
-# case_id = 11111
-# module.passMsg = 'Test Run Success !!'
-# module.failMsg = 'Test Run Fail !!'
+run_id = 372
+case_id = 11125
+passMsg = 'Test Run Success !!'
+failMsg = 'Test Run Fail !!'
 
 class C11125(unittest.TestCase):
 
@@ -28,52 +28,40 @@ class C11125(unittest.TestCase):
         self.driver.maximize_window()
 
     def test_C11125(self):
-        driver = self.driver
-        driver.get("http://211.116.223.190:18080/vpes") # VPES 서버 진입
-        driver.find_element_by_id("signUp").click()
-        list = ["`","~","!","@","#","$","%","^","&","*","(",")","-","=","_","+","[","]","{","}",";","'",":",'"',",",".","?","<",">","/"]
+        try:
+            driver = self.driver
+            driver.get("http://211.116.223.191:18080/vpes") # VPES 서버 진입
+            driver.find_element_by_id("signUp").click()
+            list = ["`","~","!","@","#","$","%","^","&","*","(",")","-","=","_","+","[","]","{","}",";","'",":",'"',",",".","?","<",">","/"]
 
-        try :
-            for num in list: # list를 받아와서 첫번째부터 한글자씩 num으로 넘겨준다
+            try :
+                for num in list: # list를 받아와서 첫번째부터 한글자씩 num으로 넘겨준다
+                    driver.find_element_by_id("id").clear()
+                    driver.find_element_by_id("id").send_keys(num)
+                    time.sleep(10)
+                    elem = driver.find_element_by_id("wrongId")
+                    print(elem.value_of_css_property('color'))
+                    self.assertEqual(elem.value_of_css_property('color'), "rgba(255, 0, 0, 1)")
+                    self.assertEqual(driver.find_element_by_id("wrongId").text, "아이디에 한글 또는 특수문자가 포함되어 있습니다.")
+            except NoSuchElementException:  # 엘리먼트 없으면 id입력창에 테스트 성공 입력
                 driver.find_element_by_id("id").clear()
-                driver.find_element_by_id("id").send_keys(num)
-                time.sleep(10)
-                elem = driver.find_element_by_id("wrongId")
-                print(elem.value_of_css_property('color'))
-                self.assertEqual(elem.value_of_css_property('color'), "rgba(255, 0, 0, 1)")
-                self.assertEqual(driver.find_element_by_id("wrongId").text, "아이디에 한글 또는 특수문자가 포함되어 있습니다.")
-        except NoSuchElementException:  # 엘리먼트 없으면 id입력창에 테스트 성공 입력
-            driver.find_element_by_id("id").clear()
-            driver.find_element_by_id("id").send_keys("테스트 성공")
-        time.sleep(2)
-        
-    # TestRail 결과 입력
-    # try :
-    #     self.assertEqual(driver.find_element_by_id("id").text, "테스트 성공")
-    #     module.status_id = 1
-    # except :
-    #     module.status_id = 5
-    #
-    # module.client.send_post(
-    #     'add_result_for_case/%s/%s' % (module.run_id, module.case_id),
-    #     {'module.status_id': module.status_id, 'comment': msg,})
-    # print('\n Run ID : %s\n Test Case ID: %s\n Message : %s\n' % (module.run_id, module.case_id, msg))
+                driver.find_element_by_id("id").send_keys("테스트 성공")
+            status_id = 1
+        except :
+            status_id = 5
 
     # Test Rail 결과 메세지 입력
-    # if module.status_id == 1:
-    #     print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (module.run_id, module.case_id, module.passMsg))
-    #     module.client.send_post(
-    #         'add_result_for_case/%s/%s' % (module.run_id, module.case_id),
-    #         {'module.status_id': module.status_id, 'comment': module.passMsg })
-    #
-    # elif module.status_id == 5:
-    #     print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (module.run_id, module.case_id, module.failMsg))
-    #     module.client.send_post(
-    #         'add_result_for_case/%s/%s' % (module.run_id, module.case_id),
-    #         {'module.status_id': module.status_id, 'comment': module.failMsg })
+        if status_id == 1:
+            print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (run_id, case_id, passMsg))
+            client.send_post(
+                'add_result_for_case/%s/%s' % (run_id, case_id),
+                {'module.status_id': status_id, 'comment': passMsg })
 
-    def tearDown(self):
-        self.driver.quit()
+        elif status_id == 5:
+            print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (run_id, case_id, failMsg))
+            client.send_post(
+                'add_result_for_case/%s/%s' % (run_id, case_id),
+                {'module.status_id': status_id, 'comment': failMsg })
 
 if __name__ == "__main__":
     unittest.main()

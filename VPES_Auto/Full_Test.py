@@ -1,7 +1,4 @@
 import unittest
-import os
-from typing import List
-
 
 def load_tests(loader, tests, pattern):
 
