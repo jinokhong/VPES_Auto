@@ -14,7 +14,7 @@ client = APIClient('http://211.116.223.42/testrail')
 client.user = 'johong@suresofttech.com'
 client.password = '12345'
 
-# TestRail module.run_id, Testmodule.case_id, Message 정보
+# TestRail module.run_id, Testcase_id, Message 정보
 run_id = 372
 case_id = 11128
 passMsg = 'Test Run Success !!'
@@ -29,7 +29,7 @@ class C11128(unittest.TestCase):
     def test_C11128(self):
         try:
             driver = self.driver
-            driver.get("http://211.116.223.191:18080/vpes")  # VPES 서버 진입
+            driver.get("http://211.116.223.190:18080/vpes")  # VPES 서버 진입
             driver.find_element_by_id("signUp").click()
             time.sleep(2)
             assert "체계" in driver.find_element_by_xpath("//*[@id='projectTeam']/thead/tr/th").text
@@ -44,13 +44,13 @@ class C11128(unittest.TestCase):
             print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (run_id, case_id, passMsg))
             client.send_post(
                 'add_result_for_case/%s/%s' % (run_id, case_id),
-                {'module.status_id': status_id, 'comment': passMsg })
+                {'status_id': status_id, 'comment': passMsg })
 
         elif status_id == 5:
             print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (run_id, case_id, failMsg))
             client.send_post(
                 'add_result_for_case/%s/%s' % (run_id, case_id),
-                {'module.status_id': status_id, 'comment': failMsg })
+                {'status_id': status_id, 'comment': failMsg })
 
 if __name__ == "__main__":
     unittest.main()

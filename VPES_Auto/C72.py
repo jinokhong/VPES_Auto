@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import unittest, time
 import os
-# TestRail module.run_id, Testmodule.case_id, Message 정보
+# TestRail module.run_id, Testcase_id, Message 정보
 case_id = 72
 
 fPath = "\SN_SCM 없음.xml"
@@ -38,7 +38,7 @@ class C72(unittest.TestCase):
             time.sleep(2)
             p.driver.find_element_by_id("successBtn").click()
             p.driver.find_element_by_class_name("caret").click()
-            p.driver.find_element_by_link_text("검증 결과 업로드").click()
+            p.driver.find_element_by_link_text("시험 결과 업로드").click()
             time.sleep(2)
             p.driver.find_element_by_id("toolType").click()
             Select(p.driver.find_element_by_id("toolType")).select_by_visible_text("SNIPER")  # 드롭타운 선택
@@ -73,24 +73,24 @@ class C72(unittest.TestCase):
             self.assertEqual("- 대상 프로젝트{Selenium_DIR} 소스 형상의 업로드 위치를 확인 해 주십시오.\n    프로젝트 경로 : {VPES_PATH 설정 경로}\miro\n\n- SCM 에 미존재 하는 파일 목록\n    D:\테스트 데이터\Stub_timeout.c", p.driver.find_element_by_xpath("//div[@id='uploadResultList']/span[2]").text)
             time.sleep(2)
             self.assertEqual(p.driver.find_element_by_class_name("btn.btn-danger").is_displayed(), True)
-            module.status_id = 1
+            status_id = 1
         except :
-            module.status_id = 5
+            status_id = 5
 
         # Test Rail 결과 메세지 입력
-        if module.status_id == 1:
+        if status_id == 1:
             print(
-                '\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (module.run_id, module.case_id, module.passMsg))
+                '\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (module.run_id, case_id, module.passMsg))
             module.client.send_post(
-                'add_result_for_case/%s/%s' % (module.run_id, module.case_id),
-                {'module.status_id': module.status_id, 'comment': module.passMsg})
+                'add_result_for_case/%s/%s' % (module.run_id, case_id),
+                {'status_id': status_id, 'comment': module.passMsg})
 
-        elif module.status_id == 5:
+        elif status_id == 5:
             print(
-                '\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (module.run_id, module.case_id, module.failMsg))
+                '\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (module.run_id, case_id, module.failMsg))
             module.client.send_post(
-                'add_result_for_case/%s/%s' % (module.run_id, module.case_id),
-                {'module.status_id': module.status_id, 'comment': module.failMsg})
+                'add_result_for_case/%s/%s' % (module.run_id, case_id),
+                {'status_id': status_id, 'comment': module.failMsg})
 
 if __name__ == "__main__":
     unittest.main()

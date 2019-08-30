@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import unittest, time
 import os
 
-# TestRail module.run_id, Testmodule.case_id, Message 정보
+# TestRail module.run_id, Testcase_id, Message 정보
 case_id = 11030
 
 LicensePath = "\KEY-SQA_유효기간_만료_70-85-C2-5E-1E-5E.license"
@@ -47,22 +47,22 @@ class C11030(unittest.TestCase):
             time.sleep(2)
             self.assertEqual(p.driver.find_element_by_id("endDayError").text, "사용기간 만료")
             self.assertEqual(p.driver.find_element_by_id("endDayError").value_of_css_property('color'), "rgba(255, 0, 0, 1)")
-            module.status_id = 1
+            status_id = 1
         except :
-            module.status_id = 5
+            status_id = 5
 
 # Test Rail 결과 메세지 입력
-        if module.status_id == 1:
-            print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (module.run_id, module.case_id, module.passMsg))
+        if status_id == 1:
+            print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (module.run_id, case_id, module.passMsg))
             module.client.send_post(
-                'add_result_for_case/%s/%s' % (module.run_id, module.case_id),
-                {'module.status_id': module.status_id, 'comment': module.passMsg })
+                'add_result_for_case/%s/%s' % (module.run_id, case_id),
+                {'status_id': status_id, 'comment': module.passMsg })
 
-        elif module.status_id == 5:
-            print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (module.run_id, module.case_id, module.failMsg))
+        elif status_id == 5:
+            print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (module.run_id, case_id, module.failMsg))
             module.client.send_post(
-                'add_result_for_case/%s/%s' % (module.run_id, module.case_id),
-                {'module.status_id': module.status_id, 'comment': module.failMsg })
+                'add_result_for_case/%s/%s' % (module.run_id, case_id),
+                {'status_id': status_id, 'comment': module.failMsg })
 
 
 if __name__ == "__main__":
