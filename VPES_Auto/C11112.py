@@ -15,7 +15,7 @@ client.user = 'johong@suresofttech.com'
 client.password = '12345'
 
 # TestRail module.run_id, Testcase_id, Message 정보
-run_id = 372
+run_id = 391
 case_id = 11112
 passMsg = 'Test Run Success !!'
 failMsg = 'Test Run Fail !!'
@@ -41,7 +41,7 @@ class C11112(unittest.TestCase):
             self.assertEqual(driver.find_element_by_id("wrongId").text, "아이디가 이미 존재합니다.")
             time.sleep(2)
             status_id = 1
-        except :
+        except NoSuchElementException:
             status_id = 5
 
     # Test Rail 결과 메세지 입력
@@ -56,9 +56,6 @@ class C11112(unittest.TestCase):
             client.send_post(
                 'add_result_for_case/%s/%s' % (run_id, case_id),
                 {'status_id': status_id, 'comment': failMsg })
-
-    def tearDown(self):
-        self.driver.quit()
 
 if __name__ == "__main__":
     unittest.main()

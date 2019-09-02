@@ -38,7 +38,7 @@ class C11033(unittest.TestCase):
             time.sleep(2)
             p.driver.find_element_by_id("btn-license").click()
             try:
-                element = WebDriverWait(p.driver, 60).until(
+                element = WebDriverWait(p.driver, 90).until(
                     EC.visibility_of_element_located((By.ID, "modal-content"))
                 )
             except TimeoutException:
@@ -50,18 +50,18 @@ class C11033(unittest.TestCase):
             time.sleep(2)
             p.driver.find_element_by_link_text("산출물").click()
             try:
-                element = WebDriverWait(p.driver, 60).until(
+                element = WebDriverWait(p.driver, 90).until(
                     EC.visibility_of_element_located((By.ID, "licenceValidMsg"))
                )
             except TimeoutException:
                 print("타임아웃")
             time.sleep(2)
             self.assertEqual(p.driver.find_element_by_id("licenceValidMsg").text, "상세내용 : 라이센스 기간만료!")
-            p.driver.find_element_by_class_name("close").click()
+            p.driver.find_element_by_xpath("//div[@id='licenceValid']/div/div/div/button").click()
             time.sleep(3)
             self.assertEqual("Verification / Validation Process Execution System\n전체현황", p.driver.find_element_by_css_selector("h2").text)
             status_id = 1
-        except :
+        except TimeoutException:
             status_id = 5
 
 # Test Rail 결과 메세지 입력

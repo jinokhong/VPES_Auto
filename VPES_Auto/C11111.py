@@ -1,5 +1,6 @@
 import Default_User
 import unittest, time
+from selenium.common.exceptions import NoSuchElementException
 
 
 # TestRail module.run_id, Testcase_id, Message 정보
@@ -23,7 +24,7 @@ class C11111(unittest.TestCase):
             element = p.driver.find_element_by_id("btnContactUs")
             self.assertEqual(element.is_enabled(),False)
             status_id = 1
-        except :
+        except NoSuchElementException:
             status_id = 5
 
     # Test Rail 결과 메세지 입력

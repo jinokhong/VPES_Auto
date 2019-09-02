@@ -1,5 +1,6 @@
 import Default_Setting
 from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
@@ -64,7 +65,7 @@ class C64(unittest.TestCase):
             p.driver.find_element_by_id("btn-xml").click()
             time.sleep(2)
             try:
-                element = WebDriverWait(p.driver, 60).until(
+                element = WebDriverWait(p.driver, 90).until(
                     EC.visibility_of_element_located((By.ID, "modal-content"))
                 )
             except TimeoutException:
@@ -75,10 +76,10 @@ class C64(unittest.TestCase):
             time.sleep(2)
             self.assertEqual(p.driver.find_element_by_class_name("btn.btn-danger").is_displayed(), True)
             status_id = 1
-        except :
+        except NoSuchElementException:
             status_id = 5
-
-# Test Rail 결과 입력
+#
+# # Test Rail 결과 입력
         if status_id == 1:
             print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (module.run_id, case_id, module.passMsg))
             module.client.send_post(
@@ -90,10 +91,6 @@ class C64(unittest.TestCase):
             module.client.send_post(
                 'add_result_for_case/%s/%s' % (module.run_id, case_id),
                 {'status_id': status_id, 'comment': module.failMsg })
-
-
-        def tearDown(self):
-            self.driver.quit()
 
 if __name__ == "__main__":
     unittest.main()

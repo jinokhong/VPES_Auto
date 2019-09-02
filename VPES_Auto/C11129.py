@@ -1,15 +1,14 @@
 import Default_User
+from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 import unittest, time
 
 
-# 1.6 기준 이슈 있음(이름 입력하지 않아도 회원가입 버튼 활성화됨)
-
 # TestRail module.run_id, Testcase_id, Message 정보
-case_id = 11124
+case_id = 11129
 
-class C11124(unittest.TestCase):
-    def test_C11124(self):
+class C11129(unittest.TestCase):
+    def test_C11129(self):
         try:
             module = Default_User
             p = Default_User.default_user()
@@ -23,8 +22,21 @@ class C11124(unittest.TestCase):
             p.driver.find_element_by_id("password").send_keys("wowkw5629!@")
             p.driver.find_element_by_id("surePassword").clear()
             p.driver.find_element_by_id("surePassword").send_keys("wowkw5629!@")
-            element = p.driver.find_element_by_id("btnContactUs")
-            self.assertEqual(element.is_enabled(),False)
+            p.driver.find_element_by_id("name").clear()
+            p.driver.find_element_by_id("name").send_keys("한글")
+            p.driver.find_element_by_id("btnContactUs").click()
+            time.sleep(1)
+            self.assertEqual(p.driver.find_element_by_id("modal-content").text, "회원가입이 완료되었습니다.")
+            time.sleep(2)
+            p.driver.find_element_by_id("username").send_keys("Test")  # 로그인
+            p.driver.find_element_by_id("pwd").send_keys("wowkw5629!@")
+            p.driver.find_element_by_id("pwd").send_keys(Keys.RETURN)
+            time.sleep(2)
+            p.driver.find_element_by_id("userId").click()
+            p.driver.find_element_by_id("surePassword").click()
+            p.driver.find_element_by_id("surePassword").clear()
+            p.driver.find_element_by_id("surePassword").send_keys("wowkw5629!@#")
+            self.assertEqual(p.driver.find_element_by_id("btnContactUs").is_enabled(), False)
             status_id = 1
         except NoSuchElementException:
             status_id = 5

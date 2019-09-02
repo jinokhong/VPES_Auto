@@ -9,12 +9,12 @@ import unittest, time
 import os
 
 # TestRail module.run_id, Testcase_id, Message 정보
-case_id = 34335
+case_id = 28
 
-fPath = "\SN_GIT_POP.xml"
+fPath = "\CT_GIT_POP.xml"
 
-class C34335(unittest.TestCase):
-    def test_C34335(self):
+class C28(unittest.TestCase):
+    def test_C28(self):
         try:
             module = Default_Setting
             p = Default_Setting.default()
@@ -31,47 +31,9 @@ class C34335(unittest.TestCase):
             p.driver.find_element_by_id("BusinessName").click()
             p.driver.find_element_by_id("BusinessName").clear()
             p.driver.find_element_by_id("BusinessName").send_keys("Selenium")
-            p.driver.find_element_by_id("CSCIName").click()
-            p.driver.find_element_by_id("CSCIName").clear()
-            p.driver.find_element_by_id("CSCIName").send_keys("Git")
             p.driver.find_element_by_id("projectCheck").click()
-            time.sleep(3)
-            p.driver.find_element_by_id("btnState").click()
-            time.sleep(2)
-            p.driver.find_element_by_id("successBtn").click()
-            p.driver.find_element_by_class_name("caret").click()
-            p.driver.find_element_by_link_text("시험 결과 업로드").click()
-            time.sleep(2)
-            p.driver.find_element_by_id("toolType").click()
-            Select(p.driver.find_element_by_id("toolType")).select_by_visible_text("SNIPER")  # 드롭타운 선택
-            p.driver.find_element_by_id("toolType").click()
-            time.sleep(3)
-
-            # 현재 파일의 폴더 위치 저장
-            pathSave = os.path.dirname(os.path.realpath(__file__))
-            # 현재 테스트 케이스의 위치로 이동
-            os.chdir(pathSave)
-            # 상위 폴더로 이동
-            os.chdir('../VPES_Data')
-            # 현재 파일의 폴더 위치 저장
-            realpath = os.getcwd()
-            # 파일 포함 경로 선언
-            FullPath = realpath + fPath
-            print(FullPath)
-            time.sleep(3)
-            p.driver.find_element_by_name("uploadfile").send_keys(FullPath)
-            time.sleep(3)
-            p.driver.find_element_by_id("btn-xml").click()
-            time.sleep(2)
-            try:
-                element = WebDriverWait(p.driver, 90).until(
-                    EC.visibility_of_element_located((By.ID, "modal-content"))
-                )
-            except TimeoutException:
-                print("타임아웃")
-            assert "업로드 되었습니다." in p.driver.find_element_by_id("modal-content").text
-            time.sleep(2)
-            self.assertEqual(p.driver.find_element_by_class_name("btn.btn-success").is_displayed(),True)
+            time.sleep(1)
+            assert "CSCI를 입력해주세요." in p.driver.find_element_by_id("modal-content").text
             status_id = 1
         except NoSuchElementException:
             status_id = 5

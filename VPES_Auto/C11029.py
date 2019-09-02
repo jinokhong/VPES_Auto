@@ -15,7 +15,7 @@ client.user = 'johong@suresofttech.com'
 client.password = '12345'
 
 # TestRail module.run_id, Testcase_id, Message 정보
-run_id = 372
+run_id = 391
 case_id = 11029
 passMsg = 'Test Run Success !!'
 failMsg = 'Test Run Fail !!'
@@ -40,15 +40,15 @@ class C11029(unittest.TestCase):
             driver.find_element_by_link_text("설정").click()
             driver.find_element_by_id("licenseSetting-tab").click()
             time.sleep(2)
-            self.assertEqual(driver.find_element_by_id("VersionLabel").text, "VPES 버전")
             self.assertEqual(driver.find_element_by_id("MacLabel").text, "서버물리주소")
             self.assertEqual(driver.find_element_by_id("typeLabel").text, "라이센스 종류")
             self.assertEqual(driver.find_element_by_id("StartDayLabel").text, "사용 시작 날짜")
             self.assertEqual(driver.find_element_by_id("endDayLabel").text, "사용 종료 날짜")
             self.assertEqual(driver.find_element_by_id("totalProjectLabel").text, "총 프로젝트 수")
             self.assertEqual(driver.find_element_by_id("MaxProjectLabel").text, "최대 활성 프로젝트 수")
+            time.sleep(2)
             status_id = 1
-        except :
+        except NoSuchElementException:
             status_id = 5
 
     # Test Rail 결과 메세지 입력

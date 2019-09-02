@@ -1,5 +1,6 @@
 import Default_Setting
 from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
@@ -62,7 +63,7 @@ class C34333(unittest.TestCase):
             time.sleep(3)
             p.driver.find_element_by_id("btn-xml").click()
             try:
-                element = WebDriverWait(p.driver, 60).until(
+                element = WebDriverWait(p.driver, 90).until(
                     EC.visibility_of_element_located((By.ID, "modal-content"))
                 )
             except TimeoutException:
@@ -71,7 +72,7 @@ class C34333(unittest.TestCase):
             time.sleep(2)
             self.assertEqual(p.driver.find_element_by_class_name("btn.btn-success").is_displayed(), True)
             status_id = 1
-        except :
+        except NoSuchElementException:
             status_id = 5
 
 # Test Rail 결과 메세지 입력

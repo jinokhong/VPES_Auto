@@ -26,7 +26,7 @@ class C11116(unittest.TestCase):
             time.sleep(1)
             self.assertEqual(p.driver.find_element_by_id("modal-content").text, "회원가입이 완료되었습니다.")
             status_id = 1
-        except :
+        except NoSuchElementException:
             status_id = 5
 
         # Test Rail 결과 메세지 입력

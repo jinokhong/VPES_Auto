@@ -1,4 +1,5 @@
 import Default_Setting
+from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -38,7 +39,7 @@ class C11030(unittest.TestCase):
             time.sleep(2)
             p.driver.find_element_by_id("btn-license").click()
             try:
-                element = WebDriverWait(p.driver, 60).until(
+                element = WebDriverWait(p.driver, 90).until(
                     EC.visibility_of_element_located((By.ID, "modal-content"))
                 )
             except TimeoutException:
@@ -48,7 +49,7 @@ class C11030(unittest.TestCase):
             self.assertEqual(p.driver.find_element_by_id("endDayError").text, "사용기간 만료")
             self.assertEqual(p.driver.find_element_by_id("endDayError").value_of_css_property('color'), "rgba(255, 0, 0, 1)")
             status_id = 1
-        except :
+        except NoSuchElementException:
             status_id = 5
 
 # Test Rail 결과 메세지 입력

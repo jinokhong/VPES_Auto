@@ -1,5 +1,6 @@
 import Default_Setting
 from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
@@ -64,7 +65,7 @@ class C34337(unittest.TestCase):
             p.driver.find_element_by_id("btn-xml").click()
             time.sleep(2)
             try:
-                element = WebDriverWait(p.driver, 60).until(
+                element = WebDriverWait(p.driver, 90).until(
                     EC.visibility_of_element_located((By.ID, "modal-content"))
                 )
             except TimeoutException:
@@ -72,8 +73,9 @@ class C34337(unittest.TestCase):
             assert "업로드 되었습니다." in p.driver.find_element_by_id("modal-content").text
             time.sleep(2)
             self.assertEqual(p.driver.find_element_by_class_name("btn.btn-success").is_displayed(), True)
+            time.sleep(2)
             status_id = 1
-        except :
+        except NoSuchElementException:
             status_id = 5
 
         # Test Rail 결과 메세지 입력
@@ -81,12 +83,13 @@ class C34337(unittest.TestCase):
             print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (module.run_id, case_id, module.passMsg))
             module.client.send_post(
                 'add_result_for_case/%s/%s' % (module.run_id, case_id),
-                {'status_id': status_id, 'comment': module.passMsg, })
+                {'status_id': status_id, 'comment': module.passMsg })
 
         elif status_id == 5:
             print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (module.run_id, case_id, module.failMsg))
             module.client.send_post(
                 'add_result_for_case/%s/%s' % (module.run_id, case_id),
-                {'status_id': status_id, 'comment': module.failMsg, })
+                {'status_id': status_id, 'comment': module.failMsg })
+
 if __name__ == "__main__":
     unittest.main()

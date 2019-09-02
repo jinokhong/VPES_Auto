@@ -1,5 +1,6 @@
 import Default_Setting
 from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
@@ -8,7 +9,7 @@ import unittest, time
 import os
 
 # TestRail module.run_id, Testcase_id, Message 정보
-case_id = 34333
+case_id = 34334
 
 fPath = "\CI_DIR_MIRO.xml"
 
@@ -64,7 +65,7 @@ class C34334(unittest.TestCase):
             p.driver.find_element_by_id("btn-xml").click()
             time.sleep(2)
             try:
-                element = WebDriverWait(p.driver, 60).until(
+                element = WebDriverWait(p.driver, 90).until(
                     EC.visibility_of_element_located((By.ID, "modal-content"))
                 )
             except TimeoutException:
@@ -73,7 +74,7 @@ class C34334(unittest.TestCase):
             time.sleep(2)
             self.assertEqual(p.driver.find_element_by_class_name("btn.btn-success").is_displayed(), True)
             status_id = 1
-        except :
+        except NoSuchElementException:
             status_id = 5
 
 # Test Rail 결과 메세지 입력

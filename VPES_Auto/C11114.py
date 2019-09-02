@@ -15,7 +15,7 @@ client.user = 'johong@suresofttech.com'
 client.password = '12345'
 
 # TestRail module.run_id, Testcase_id, Message 정보
-run_id = 372
+run_id = 391
 case_id = 11114
 passMsg = 'Test Run Success !!'
 failMsg = 'Test Run Fail !!'
@@ -39,7 +39,7 @@ class C11114(unittest.TestCase):
             elem = driver.find_element_by_id("wrongPassword")
             self.assertEqual(driver.find_element_by_id("wrongPassword").text, "")
             status_id = 1
-        except :
+        except NoSuchElementException:
             status_id = 5
 
 

@@ -2,6 +2,7 @@ import Default_User
 import Default_Setting
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
+from selenium.common.exceptions import NoSuchElementException
 import unittest, time
 
 
@@ -54,7 +55,7 @@ class C11118(unittest.TestCase):
             assert "Test_11118" in p.driver.find_element_by_xpath("//tbody[@id='my-tbody']/tr/td").text
             assert "GIT" in p.driver.find_element_by_xpath("//tbody[@id='my-tbody']/tr/td[2]").text
             status_id = 1
-        except :
+        except NoSuchElementException:
             status_id = 5
 
     # Test Rail 결과 메세지 입력

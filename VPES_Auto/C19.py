@@ -1,5 +1,6 @@
 import Default_Setting
 from selenium.webdriver.support.ui import Select
+from selenium.common.exceptions import NoSuchElementException
 import unittest, time
 
 
@@ -33,9 +34,8 @@ class C19(unittest.TestCase):
             time.sleep(2)
             p.driver.find_element_by_id("successBtn").click()
             assert "Selenium::Directory" in p.driver.find_element_by_xpath("//tbody[@id='projectStateList']/tr/td[2]").text
-            assert "Directory" in p.driver.find_element_by_xpath("//tbody[@id='projectStateList']/tr/td[3]").text
             status_id = 1
-        except :
+        except NoSuchElementException:
             status_id = 5
 
 

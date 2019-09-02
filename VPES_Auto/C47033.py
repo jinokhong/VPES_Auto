@@ -5,11 +5,10 @@ import unittest, time
 
 
 # TestRail module.run_id, Testcase_id, Message 정보
-case_id = 17
+case_id = 47033
 
-
-class C17(unittest.TestCase):
-    def test_C17(self):
+class C47033(unittest.TestCase):
+    def test_C47033(self):
         try:
             module = Default_Setting
             p = Default_Setting.default()
@@ -18,28 +17,18 @@ class C17(unittest.TestCase):
             p.driver.find_element_by_id("projectCreate").click()
             time.sleep(2)
             p.driver.find_element_by_id("scmType").click()
-            Select(p.driver.find_element_by_id("scmType")).select_by_visible_text("SVN") # 드롭타운 선택
+            Select(p.driver.find_element_by_id("scmType")).select_by_visible_text("DIRECTORY") # 드롭타운 선택
             p.driver.find_element_by_id("scmType").click()
             p.driver.find_element_by_id("scmUrl").click()
             p.driver.find_element_by_id("scmUrl").clear()
-            p.driver.find_element_by_id("scmUrl").send_keys(module.scm_svn)
-            p.driver.find_element_by_id("BusinessName").click()
-            p.driver.find_element_by_id("BusinessName").clear()
-            p.driver.find_element_by_id("BusinessName").send_keys("Selenium")
-            p.driver.find_element_by_id("CSCIName").click()
-            p.driver.find_element_by_id("CSCIName").clear()
-            p.driver.find_element_by_id("CSCIName").send_keys("SVN")
-            p.driver.find_element_by_id("projectCheck").click()
-            time.sleep(3)
-            p.driver.find_element_by_id("btnState").click()
+            p.driver.find_element_by_id("scmUrl").send_keys(module.scm_dir)
             time.sleep(2)
-            p.driver.find_element_by_id("successBtn").click()
-            assert "Selenium::SVN" in p.driver.find_element_by_xpath("//tbody[@id='projectStateList']/tr/td[2]").text
+            assert "유효한 Url입니다." in p.driver.find_element_by_id("URLstate").text
             status_id = 1
         except NoSuchElementException:
             status_id = 5
 
-        # Test Rail 결과 메세지 입력
+# Test Rail 결과 메세지 입력
         if status_id == 1:
             print('\nRun ID : %s\nTest Case ID: %s\nMessage : %s\n' % (module.run_id, case_id, module.passMsg))
             module.client.send_post(
@@ -54,5 +43,3 @@ class C17(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
-

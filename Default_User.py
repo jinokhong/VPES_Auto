@@ -17,8 +17,8 @@ client = APIClient('http://211.116.223.42/testrail')
 client.user = 'johong@suresofttech.com'
 client.password = '12345'
 passMsg = 'Test Run Success !!'
-failMsg = logging.ERROR
-run_id = 372
+failMsg = 'Test Run Fail !!'
+run_id = 391
 
 usr = "qscroll"
 pwd = "sure"
@@ -78,9 +78,6 @@ class default_user(unittest.TestCase):
         except NoSuchElementException: # 엘리먼트 없으면 VPES 메인 페이지로 이동 클릭
            driver.find_element_by_link_text("로그아웃").click()
         time.sleep(5)
-
-    # def tearDown(self):
-    #     self.driver.quit()
 
 if __name__ == "__main__":
     unittest.main()
