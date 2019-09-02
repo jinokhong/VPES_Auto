@@ -15,7 +15,7 @@ client.user = 'johong@suresofttech.com'
 client.password = '12345'
 
 # TestRail module.run_id, Testcase_id, Message 정보
-run_id = 391
+run_id = 393
 case_id = 11120
 passMsg = 'Test Run Success !!'
 failMsg = 'Test Run Fail !!'

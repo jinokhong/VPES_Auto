@@ -15,12 +15,12 @@ client.user = 'johong@suresofttech.com'
 client.password = '12345'
 
 # TestRail module.run_id, Testcase_id, Message 정보
-run_id = 391
+run_id = 393
 case_id = 11029
 passMsg = 'Test Run Success !!'
 failMsg = 'Test Run Fail !!'
 
-usr = "qscroll"
+usr = "run_id = 393"
 pwd = "sure"
 
 class C11029(unittest.TestCase):

@@ -18,7 +18,7 @@ client.user = 'johong@suresofttech.com'
 client.password = '12345'
 passMsg = 'Test Run Success !!'
 failMsg = 'Test Run Fail !!'
-run_id = 391
+run_id = 393
 
 usr = "qscroll"
 pwd = "sure"
