@@ -17,7 +17,7 @@ client.password = '12345'
 
 # TestRail module.run_id, Testcase_id, Message 정보
 run_id = 512
-case_id = 11032
+case_id = 11033
 passMsg = 'Test Run Success !!'
 failMsg = 'Test Run Fail !!'
 
