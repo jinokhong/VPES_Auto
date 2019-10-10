@@ -24,7 +24,7 @@ class C11(unittest.TestCase):
             p.driver.find_element_by_id("scmUrl").clear()
             p.driver.find_element_by_id("scmUrl").send_keys("https://qa-server/VPES_Source1")
             time.sleep(2)
-            assert "사용자 정보 또는 유효하지 않은 Url입니다." in p.driver.find_element_by_id("URLstate").text
+            assert "사용자 정보 또는 유효하지 않은 URL입니다." in p.driver.find_element_by_id("URLstate").text
             status_id = 1
         except NoSuchElementException:
             status_id = 5

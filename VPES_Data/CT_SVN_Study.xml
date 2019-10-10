@@ -3,18 +3,20 @@
 	<summary>
 		<prjName></prjName>
 		<toolName>CodeScroll Controller Tester RTV(Remote Target Verifier) + Target Plugin</toolName>
-		<toolVersion>3.0.6</toolVersion>
+		<toolVersion>3.0.8</toolVersion>
 		<statementCov>67.76</statementCov>
 		<branchCov>46.51</branchCov>
-		<mcdcCov>21.42</mcdcCov>
+		<mcdcCov>20.23</mcdcCov>
 	</summary>
 	<source>
 		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
 		<crc32>4acafe41</crc32>
+		<isExcluded>false</isExcluded>
 	</source>
 	<source>
 		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.h</fileName>
 		<crc32>ff7f74e8</crc32>
+		<isExcluded>false</isExcluded>
 	</source>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
@@ -33,6 +35,8 @@
 		<coveredStatementList>233,235</coveredStatementList>
 		<unCoveredStatementList></unCoveredStatementList>
 		<coveredBranchList></coveredBranchList>
+		<coveredFunctionCallCnt>1</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>1</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
@@ -51,6 +55,8 @@
 		<coveredStatementList>115</coveredStatementList>
 		<unCoveredStatementList></unCoveredStatementList>
 		<coveredBranchList></coveredBranchList>
+		<coveredFunctionCallCnt>0</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>0</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
@@ -69,6 +75,8 @@
 		<coveredStatementList>99,111,112,106,107</coveredStatementList>
 		<unCoveredStatementList>100,101,102,108</unCoveredStatementList>
 		<coveredBranchList>99:F,107:F</coveredBranchList>
+		<coveredFunctionCallCnt>5</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>9</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
@@ -87,6 +95,8 @@
 		<coveredStatementList>170,181,160,182,161,172,162,173,184,163,174,175,187,188,166,155,178,189,157,168,158,169,159</coveredStatementList>
 		<unCoveredStatementList>179</unCoveredStatementList>
 		<coveredBranchList>178:F,173:TF,168:TF,169:TF,181:TF</coveredBranchList>
+		<coveredFunctionCallCnt>11</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>11</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
@@ -95,16 +105,18 @@
 		<functionEndLine>220</functionEndLine>
 		<statementCov>93.75</statementCov>
 		<branchCov>75.00</branchCov>
-		<mcdcCov>60.00</mcdcCov>
+		<mcdcCov>40.00</mcdcCov>
 		<totalStatementCnt>16</totalStatementCnt>
 		<coveredStatementCnt>15</coveredStatementCnt>
 		<totalBranchCnt>4</totalBranchCnt>
 		<coveredBranchCnt>3</coveredBranchCnt>
 		<totalMcdcCnt>5</totalMcdcCnt>
-		<coveredMcdcCnt>3</coveredMcdcCnt>
+		<coveredMcdcCnt>2</coveredMcdcCnt>
 		<coveredStatementList>194,196,197,199,211,202,204,215,205,216,206,218,207,208,219</coveredStatementList>
 		<unCoveredStatementList>212</unCoveredStatementList>
 		<coveredBranchList>207:TF,211:F</coveredBranchList>
+		<coveredFunctionCallCnt>9</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>10</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
@@ -123,6 +135,8 @@
 		<coveredStatementList>45,46,48,42</coveredStatementList>
 		<unCoveredStatementList></unCoveredStatementList>
 		<coveredBranchList>42:TF,45:TF</coveredBranchList>
+		<coveredFunctionCallCnt>0</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>0</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
@@ -141,6 +155,8 @@
 		<coveredStatementList>229</coveredStatementList>
 		<unCoveredStatementList></unCoveredStatementList>
 		<coveredBranchList></coveredBranchList>
+		<coveredFunctionCallCnt>1</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>1</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
@@ -159,6 +175,8 @@
 		<coveredStatementList>264,267,259,260,263</coveredStatementList>
 		<unCoveredStatementList></unCoveredStatementList>
 		<coveredBranchList>259:TF,263:TF</coveredBranchList>
+		<coveredFunctionCallCnt>2</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>2</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
@@ -177,6 +195,8 @@
 		<coveredStatementList>253,254</coveredStatementList>
 		<unCoveredStatementList></unCoveredStatementList>
 		<coveredBranchList></coveredBranchList>
+		<coveredFunctionCallCnt>1</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>1</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
@@ -195,6 +215,8 @@
 		<coveredStatementList>223,224</coveredStatementList>
 		<unCoveredStatementList></unCoveredStatementList>
 		<coveredBranchList></coveredBranchList>
+		<coveredFunctionCallCnt>0</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>0</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
@@ -213,6 +235,8 @@
 		<coveredStatementList>242,240,241</coveredStatementList>
 		<unCoveredStatementList>243,244,245,248</unCoveredStatementList>
 		<coveredBranchList></coveredBranchList>
+		<coveredFunctionCallCnt>1</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>2</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
@@ -231,6 +255,8 @@
 		<coveredStatementList>150,140,141,142,143,145,135,147,148,137,149,138,139</coveredStatementList>
 		<unCoveredStatementList></unCoveredStatementList>
 		<coveredBranchList>142:TF</coveredBranchList>
+		<coveredFunctionCallCnt>9</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>9</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
@@ -246,9 +272,11 @@
 		<coveredBranchCnt>12</coveredBranchCnt>
 		<totalMcdcCnt>58</totalMcdcCnt>
 		<coveredMcdcCnt>6</coveredMcdcCnt>
-		<coveredStatementList>271,282,272,283,275,276,278,279,346,302,303,305,308,309</coveredStatementList>
-		<unCoveredStatementList>291,292,294,295,330,298,332,333,311,312,335,336,314,315,338,339,317,318,280,285,286,320,342,321,288,289,323,324,326,327,306,329</unCoveredStatementList>
-		<coveredBranchList>308:T,271:TF,305:F,302:TF,278:TF,279:F,282:T,275:TF</coveredBranchList>
+		<coveredStatementList>271,282,272,285,275,286,276,278,279,346,302,303,305,306</coveredStatementList>
+		<unCoveredStatementList>291,292,294,295,330,298,332,333,311,312,335,336,314,315,338,339,317,318,280,283,320,342,321,288,289,323,324,326,327,329,308,309</unCoveredStatementList>
+		<coveredBranchList>271:TF,282:F,285:T,302:TF,305:T,278:TF,279:F,275:TF</coveredBranchList>
+		<coveredFunctionCallCnt>0</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>0</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
@@ -267,6 +295,8 @@
 		<coveredStatementList>121,118,119</coveredStatementList>
 		<unCoveredStatementList>122,126,127,128</unCoveredStatementList>
 		<coveredBranchList>121:F,118:T</coveredBranchList>
+		<coveredFunctionCallCnt>2</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>6</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
@@ -285,6 +315,8 @@
 		<coveredStatementList>69,70,74</coveredStatementList>
 		<unCoveredStatementList>71</unCoveredStatementList>
 		<coveredBranchList>70:F</coveredBranchList>
+		<coveredFunctionCallCnt>2</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>3</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
@@ -303,6 +335,8 @@
 		<coveredStatementList>38</coveredStatementList>
 		<unCoveredStatementList></unCoveredStatementList>
 		<coveredBranchList></coveredBranchList>
+		<coveredFunctionCallCnt>1</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>1</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
@@ -321,6 +355,8 @@
 		<coveredStatementList>53</coveredStatementList>
 		<unCoveredStatementList></unCoveredStatementList>
 		<coveredBranchList></coveredBranchList>
+		<coveredFunctionCallCnt>0</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>0</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
@@ -339,5 +375,141 @@
 		<coveredStatementList>58,60</coveredStatementList>
 		<unCoveredStatementList>65</unCoveredStatementList>
 		<coveredBranchList>60:T</coveredBranchList>
+		<coveredFunctionCallCnt>0</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>0</totalFunctionCallCnt>
 	</functionCoverage>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
+		<function><![CDATA[helper(signed int)]]></function>
+		<complexity>1.0</complexity>
+		<statementsCnt>1.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
+		<function><![CDATA[loadFile(struct _iobuf *)]]></function>
+		<complexity>2.0</complexity>
+		<statementsCnt>5.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
+		<function><![CDATA[mcdcError(signed int, signed int, signed int, signed int)]]></function>
+		<complexity>23.0</complexity>
+		<statementsCnt>46.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
+		<function><![CDATA[fibonacci_fail(signed int)]]></function>
+		<complexity>3.0</complexity>
+		<statementsCnt>5.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
+		<function><![CDATA[testMe1()]]></function>
+		<complexity>1.0</complexity>
+		<statementsCnt>1.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
+		<function><![CDATA[testMe2(signed int)]]></function>
+		<complexity>1.0</complexity>
+		<statementsCnt>1.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
+		<function><![CDATA[charlesFunc(signed int)]]></function>
+		<complexity>3.0</complexity>
+		<statementsCnt>4.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
+		<function><![CDATA[stubFunc0(signed int)]]></function>
+		<complexity>2.0</complexity>
+		<statementsCnt>4.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
+		<function><![CDATA[timeOutFunc()]]></function>
+		<complexity>2.0</complexity>
+		<statementsCnt>3.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
+		<function><![CDATA[abc(signed int)]]></function>
+		<complexity>4.0</complexity>
+		<statementsCnt>9.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
+		<function><![CDATA[pTest(signed int *)]]></function>
+		<complexity>4.0</complexity>
+		<statementsCnt>7.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
+		<function><![CDATA[ab_1(signed int)]]></function>
+		<complexity>1.0</complexity>
+		<statementsCnt>1.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
+		<function><![CDATA[main(signed int, char **)]]></function>
+		<complexity>2.0</complexity>
+		<statementsCnt>11.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
+		<function><![CDATA[api2(enum enm1, Enm2)]]></function>
+		<complexity>3.0</complexity>
+		<statementsCnt>15.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
+		<function><![CDATA[api(signed int, char, float, unsigned long, long double)]]></function>
+		<complexity>6.0</complexity>
+		<statementsCnt>23.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
+		<function><![CDATA[helper_Enm2(signed int)]]></function>
+		<complexity>1.0</complexity>
+		<statementsCnt>1.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
+		<function><![CDATA[OutOfIndex_error(signed int)]]></function>
+		<complexity>1.0</complexity>
+		<statementsCnt>1.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
+		<function><![CDATA[exit_error()]]></function>
+		<complexity>1.0</complexity>
+		<statementsCnt>1.0</statementsCnt>
+	</metric>
+	<fileMetric>
+		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
+		<functionCnt>18</functionCnt>
+		<physicalLineCnt>350.0</physicalLineCnt>
+		<lineOfCodeCnt>265.0</lineOfCodeCnt>
+		<lineOfCommentCnt>34</lineOfCommentCnt>
+		<notOperatedTestCaseCnt>0</notOperatedTestCaseCnt>
+		<ignoredTestCaseCnt>0</ignoredTestCaseCnt>
+		<successTestCaseCnt>86</successTestCaseCnt>
+		<failureTestCaseCnt>0</failureTestCaseCnt>
+		<errorTestCaseCnt>12</errorTestCaseCnt>
+		<totalTestCaseCnt>98</totalTestCaseCnt>
+	</fileMetric>
+	<fileMetric>
+		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.h</fileName>
+		<functionCnt>0</functionCnt>
+		<physicalLineCnt>33.0</physicalLineCnt>
+		<lineOfCodeCnt>24.0</lineOfCodeCnt>
+		<lineOfCommentCnt>1</lineOfCommentCnt>
+		<notOperatedTestCaseCnt>-1</notOperatedTestCaseCnt>
+		<ignoredTestCaseCnt>0</ignoredTestCaseCnt>
+		<successTestCaseCnt>-1</successTestCaseCnt>
+		<failureTestCaseCnt>-1</failureTestCaseCnt>
+		<errorTestCaseCnt>-1</errorTestCaseCnt>
+		<totalTestCaseCnt>0</totalTestCaseCnt>
+	</fileMetric>
 </ct.ControllerTesterResult>

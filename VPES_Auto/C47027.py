@@ -24,7 +24,8 @@ class C47027(unittest.TestCase):
             p.driver.find_element_by_id("scmUrl").clear()
             p.driver.find_element_by_id("scmUrl").send_keys("ttttttt")
             time.sleep(2)
-            assert "최상위 폴더 경로만 있거나, 유효하지 않은  Url입니다." in p.driver.find_element_by_id("URLstate").text
+            self.assertEqual(p.driver.find_element_by_id("URLstate").text, "최상위 폴더 경로만 있거나, 유효하지 않은 URL입니다.")
+            time.sleep(2)
             status_id = 1
         except NoSuchElementException:
             status_id = 5

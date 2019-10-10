@@ -23,7 +23,7 @@ class C12(unittest.TestCase):
             p.driver.find_element_by_id("scmUrl").clear()
             p.driver.find_element_by_id("scmUrl").send_keys(module.scm_git)
             time.sleep(2)
-            assert "유효한 Url입니다." in p.driver.find_element_by_id("URLstate").text
+            self.assertEqual(p.driver.find_element_by_id("URLstate").text, "유효한 URL입니다.")
             status_id = 1
         except NoSuchElementException:
             status_id = 5

@@ -14,7 +14,7 @@
 import requests
 import json
 import base64
-
+from selenium.common.exceptions import NoSuchElementException
 
 class APIClient:
     def __init__(self, base_url):

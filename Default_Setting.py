@@ -16,7 +16,7 @@ client.user = 'johong@suresofttech.com'
 client.password = '12345'
 passMsg = 'Test Run Success !!'
 failMsg = 'Test Run Fail !!'
-run_id = 393
+run_id = 512
 
 usr = "qscroll"
 pwd = "sure"
@@ -78,10 +78,9 @@ class default(unittest.TestCase):
                 driver.find_element_by_id("deleteY").click()
                 time.sleep(4)
 
-
         except NoSuchElementException: # 엘리먼트 없으면 VPES 메인 페이지로 이동 클릭
             driver.find_element_by_xpath("//*[@id='leftWrap']/h1/a/img").click()
-        time.sleep(5)
+        time.sleep(3)
 
 if __name__ == "__main__":
     unittest.main()

@@ -23,8 +23,8 @@ class C11124(unittest.TestCase):
             p.driver.find_element_by_id("password").send_keys("wowkw5629!@")
             p.driver.find_element_by_id("surePassword").clear()
             p.driver.find_element_by_id("surePassword").send_keys("wowkw5629!@")
-            element = p.driver.find_element_by_id("btnContactUs")
-            self.assertEqual(element.is_enabled(),False)
+            time.sleep(1)
+            self.assertEqual(p.driver.find_element_by_id("btnContactUs").is_enabled(), False)
             status_id = 1
         except NoSuchElementException:
             status_id = 5

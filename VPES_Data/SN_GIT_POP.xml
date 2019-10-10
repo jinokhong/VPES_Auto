@@ -4,31 +4,37 @@
 		<prjName></prjName>
 		<toolName>CodeScroll SNIPER</toolName>
 		<toolVersion>1.6.2.201806281728</toolVersion>
-		<numberOfMemViolation>13</numberOfMemViolation>
+		<numberOfMemViolation>11</numberOfMemViolation>
 	</summary>
-	<source>
-		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFile.c</fileName>
-		<crc32>898544e4</crc32>
-	</source>
-	<source>
-		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFind.c</fileName>
-		<crc32>6976e5cc</crc32>
-	</source>
 	<source>
 		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFont.c</fileName>
 		<crc32>39c5d574</crc32>
+		<isExcluded>false</isExcluded>
 	</source>
 	<source>
 		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopPad.c</fileName>
 		<crc32>3c42444e</crc32>
+		<isExcluded>false</isExcluded>
+	</source>
+	<source>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFind.c</fileName>
+		<crc32>6976e5cc</crc32>
+		<isExcluded>false</isExcluded>
 	</source>
 	<source>
 		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopPrnt0.c</fileName>
 		<crc32>14577fb4</crc32>
+		<isExcluded>false</isExcluded>
+	</source>
+	<source>
+		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFile.c</fileName>
+		<crc32>898544e4</crc32>
+		<isExcluded>false</isExcluded>
 	</source>
 	<source>
 		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\RESOURCE.H</fileName>
 		<crc32>736f64f7</crc32>
+		<isExcluded>false</isExcluded>
 	</source>
 	<ruleInfo>
 		<ruleSetName><![CDATA[MISSION_CRITICAL_ERRORS]]></ruleSetName>
@@ -780,20 +786,62 @@
 		<ruleSeverity>낮음</ruleSeverity>
 		<ruleType><![CDATA[잠재적 오류]]></ruleType>
 	</ruleInfo>
-	<bug>
-		<violationHash>109259317769931624622797589898532856001</violationHash>
-		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFile.c</fileName>
-		<function><![CDATA[PopFileRead(struct HWND__ *, unsigned short *)]]></function>
-		<functionStartLine>59</functionStartLine>
-		<functionEndLine>148</functionEndLine>
-		<line>78</line>
-		<rule>RTE_Invalid_Malloc_Argument</rule>
-		<ruleTitle>malloc 으로 메모리 할당 시 유효하지 않은 길이 금지</ruleTitle>
-		<level>높음</level>
-		<content><![CDATA[유효하지 않은 길이를 malloc 으로 할당 함]]></content>
-		<suppression>false</suppression>
-		<suppressionDesc></suppressionDesc>
-	</bug>
+	<scoreState>
+		<kind>5</kind>
+		<name>실제 오류가 거의 확실</name>
+		<rangeStart>100</rangeStart>
+		<rangeEnd>100</rangeEnd>
+	</scoreState>
+	<scoreState>
+		<kind>4</kind>
+		<name>실제 오류 가능성 아주 높음</name>
+		<rangeStart>76</rangeStart>
+		<rangeEnd>99</rangeEnd>
+	</scoreState>
+	<scoreState>
+		<kind>3</kind>
+		<name>실제 오류 가능성 높음</name>
+		<rangeStart>51</rangeStart>
+		<rangeEnd>75</rangeEnd>
+	</scoreState>
+	<scoreState>
+		<kind>2</kind>
+		<name>실제 오류 가능성 낮음</name>
+		<rangeStart>26</rangeStart>
+		<rangeEnd>50</rangeEnd>
+	</scoreState>
+	<scoreState>
+		<kind>1</kind>
+		<name>실제 오류 가능성 아주 낮음</name>
+		<rangeStart>1</rangeStart>
+		<rangeEnd>25</rangeEnd>
+	</scoreState>
+	<scoreState>
+		<kind>0</kind>
+		<name>없음</name>
+		<rangeStart>0</rangeStart>
+		<rangeEnd>0</rangeEnd>
+	</scoreState>
+	<violationState>
+		<kind>0</kind>
+		<name>NONE</name>
+	</violationState>
+	<violationState>
+		<kind>1</kind>
+		<name>SUPPRESS</name>
+	</violationState>
+	<violationState>
+		<kind>2</kind>
+		<name>NOW</name>
+	</violationState>
+	<violationState>
+		<kind>3</kind>
+		<name>NEXT</name>
+	</violationState>
+	<violationState>
+		<kind>4</kind>
+		<name>OTHER</name>
+	</violationState>
 	<bug>
 		<violationHash>135939544312239656925962762617483140254</violationHash>
 		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopPad.c</fileName>
@@ -807,6 +855,9 @@
 		<content><![CDATA[Switch문에 Default case문이 없음]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
+		<probability>0</probability>
+		<status>0</status>
+		<templateId>8042</templateId>
 	</bug>
 	<bug>
 		<violationHash>44509860678303337718055406497077537409</violationHash>
@@ -821,6 +872,9 @@
 		<content><![CDATA[Switch문에 Default case문이 없음]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
+		<probability>0</probability>
+		<status>0</status>
+		<templateId>8042</templateId>
 	</bug>
 	<bug>
 		<violationHash>27423586914179120861511585654843243648</violationHash>
@@ -835,6 +889,9 @@
 		<content><![CDATA[Switch문에 Default case문이 없음]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
+		<probability>0</probability>
+		<status>0</status>
+		<templateId>8042</templateId>
 	</bug>
 	<bug>
 		<violationHash>25412263429515819563581488036242955273</violationHash>
@@ -849,6 +906,9 @@
 		<content><![CDATA[프로그램 흐름 상에 만들어진 값이 사용되지 않았음(lParam)]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
+		<probability>5</probability>
+		<status>0</status>
+		<templateId>8001</templateId>
 	</bug>
 	<bug>
 		<violationHash>1528387415301299713917562211299482350571</violationHash>
@@ -863,6 +923,9 @@
 		<content><![CDATA[Switch문에 Default case문이 없음]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
+		<probability>0</probability>
+		<status>0</status>
+		<templateId>8042</templateId>
 	</bug>
 	<bug>
 		<violationHash>128465128255540527986197385725099530235</violationHash>
@@ -877,6 +940,9 @@
 		<content><![CDATA[Switch문에 Default case문이 없음]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
+		<probability>0</probability>
+		<status>0</status>
+		<templateId>8042</templateId>
 	</bug>
 	<bug>
 		<violationHash>113056573451255082434196828344557796069</violationHash>
@@ -891,6 +957,9 @@
 		<content><![CDATA[case문에서 Break문을 생략하면 안됨]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
+		<probability>0</probability>
+		<status>0</status>
+		<templateId>8041</templateId>
 	</bug>
 	<bug>
 		<violationHash>1778188877197029946514856877405990245994</violationHash>
@@ -905,20 +974,9 @@
 		<content><![CDATA[case문에서 Break문을 생략하면 안됨]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
-	</bug>
-	<bug>
-		<violationHash>81153197888413466977508403020056529535</violationHash>
-		<fileName>C:\Users\hjo\Desktop\STAT_GIT\PopPad3_VS6.0 (2)\PopFind.c</fileName>
-		<function><![CDATA[PopFindFindText(struct HWND__ *, signed int *, struct tagFINDREPLACEW *)]]></function>
-		<functionStartLine>52</functionStartLine>
-		<functionEndLine>87</functionEndLine>
-		<line>61</line>
-		<rule>RTE_Memory_Leak</rule>
-		<ruleTitle>프로그램 흐름에서 메모리 누수 금지</ruleTitle>
-		<level>매우높음</level>
-		<content><![CDATA[프로그램 흐름상에 메모리 누수가 발생할 가능성이 있음]]></content>
-		<suppression>false</suppression>
-		<suppressionDesc></suppressionDesc>
+		<probability>0</probability>
+		<status>0</status>
+		<templateId>8041</templateId>
 	</bug>
 	<bug>
 		<violationHash>550372035549216229617424684999184260883</violationHash>
@@ -933,6 +991,9 @@
 		<content><![CDATA["pstrDoc" 변수가 초기화되지 않고 사용될 수 있음]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
+		<probability>5</probability>
+		<status>0</status>
+		<templateId>8003</templateId>
 	</bug>
 	<bug>
 		<violationHash>1554512833707310423016439256891410564530</violationHash>
@@ -947,6 +1008,9 @@
 		<content><![CDATA[case문에서 Break문을 생략하면 안됨]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
+		<probability>0</probability>
+		<status>0</status>
+		<templateId>8041</templateId>
 	</bug>
 	<bug>
 		<violationHash>115155580967444208689217809088431822052</violationHash>
@@ -954,12 +1018,15 @@
 		<function><![CDATA[PopFileRead(struct HWND__ *, unsigned short *)]]></function>
 		<functionStartLine>59</functionStartLine>
 		<functionEndLine>148</functionEndLine>
-		<line>78</line>
+		<line>98</line>
 		<rule>RTE_Type_Overrun</rule>
 		<ruleTitle>타입 범위를 벗어나는 값 사용 금지(Overrun)</ruleTitle>
 		<level>낮음</level>
 		<content><![CDATA[해당 위치는 Type-Overrun 이 발생할 가능성이 있음]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
+		<probability>2</probability>
+		<status>0</status>
+		<templateId>8005</templateId>
 	</bug>
 </sn.SniperResult>

@@ -3,30 +3,35 @@
 	<summary>
 		<prjName></prjName>
 		<toolName>CodeScroll Controller Tester RTV(Remote Target Verifier) + Target Plugin</toolName>
-		<toolVersion>3.0.6</toolVersion>
-		<statementCov>60.77</statementCov>
-		<branchCov>48.33</branchCov>
-		<mcdcCov>11.47</mcdcCov>
+		<toolVersion>3.0.8</toolVersion>
+		<statementCov>58.19</statementCov>
+		<branchCov>45.00</branchCov>
+		<mcdcCov>9.83</mcdcCov>
 	</summary>
 	<source>
 		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\miro_fun.c</fileName>
 		<crc32>8fca5527</crc32>
-	</source>
-	<source>
-		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\miro_fun2.c</fileName>
-		<crc32>d46300a5</crc32>
-	</source>
-	<source>
-		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\Q_S.c</fileName>
-		<crc32>4b9511cd</crc32>
+		<isExcluded>false</isExcluded>
 	</source>
 	<source>
 		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\Q_S.h</fileName>
 		<crc32>ca4f4382</crc32>
+		<isExcluded>false</isExcluded>
+	</source>
+	<source>
+		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\miro_fun2.c</fileName>
+		<crc32>d46300a5</crc32>
+		<isExcluded>false</isExcluded>
 	</source>
 	<source>
 		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\QS_fun.c</fileName>
 		<crc32>9743c5d2</crc32>
+		<isExcluded>false</isExcluded>
+	</source>
+	<source>
+		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\Q_S.c</fileName>
+		<crc32>4b9511cd</crc32>
+		<isExcluded>false</isExcluded>
 	</source>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\QS_fun.c</fileName>
@@ -45,6 +50,8 @@
 		<coveredStatementList>11,12,13,14,15,5,7,18,8,10</coveredStatementList>
 		<unCoveredStatementList></unCoveredStatementList>
 		<coveredBranchList></coveredBranchList>
+		<coveredFunctionCallCnt>2</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>2</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\QS_fun.c</fileName>
@@ -63,6 +70,8 @@
 		<coveredStatementList>33,34,35,36,26,38,39,28,30,31,32</coveredStatementList>
 		<unCoveredStatementList></unCoveredStatementList>
 		<coveredBranchList>28:TF</coveredBranchList>
+		<coveredFunctionCallCnt>1</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>1</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\QS_fun.c</fileName>
@@ -81,6 +90,8 @@
 		<coveredStatementList>57,47,48,59,50,52,53</coveredStatementList>
 		<unCoveredStatementList></unCoveredStatementList>
 		<coveredBranchList>50:TF,48:TF</coveredBranchList>
+		<coveredFunctionCallCnt>2</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>2</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\QS_fun.c</fileName>
@@ -99,6 +110,8 @@
 		<coveredStatementList>67,69,81,72</coveredStatementList>
 		<unCoveredStatementList>78,74,75</unCoveredStatementList>
 		<coveredBranchList>72:-,69:TF</coveredBranchList>
+		<coveredFunctionCallCnt>0</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>2</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\QS_fun.c</fileName>
@@ -117,6 +130,8 @@
 		<coveredStatementList>88,89,122,90,91,93</coveredStatementList>
 		<unCoveredStatementList>99,110,101,112,113,102,103,114,106,117,108,109,96,98</unCoveredStatementList>
 		<coveredBranchList>90:TF,93:F</coveredBranchList>
+		<coveredFunctionCallCnt>1</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>3</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\QS_fun.c</fileName>
@@ -135,6 +150,8 @@
 		<coveredStatementList>136,129,131</coveredStatementList>
 		<unCoveredStatementList>133,134</unCoveredStatementList>
 		<coveredBranchList>131:F</coveredBranchList>
+		<coveredFunctionCallCnt>1</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>2</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\miro_fun.c</fileName>
@@ -153,6 +170,8 @@
 		<coveredStatementList>33,44,35,37,38,27,39,28,29,40,31,43</coveredStatementList>
 		<unCoveredStatementList></unCoveredStatementList>
 		<coveredBranchList>43:T,33:T,35:TF,31:T</coveredBranchList>
+		<coveredFunctionCallCnt>1</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>1</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\Q_S.c</fileName>
@@ -171,6 +190,8 @@
 		<coveredStatementList>45,47,49,91,93,51,95,53,97,10,11,99,12,13,14,15,16,17,18,19,7,8,9,61,63,20,21,65,22,23,67,24,69,29,71,73,30,75,32,33,77,79,37,39,101,102,81,83,41,43</coveredStatementList>
 		<unCoveredStatementList></unCoveredStatementList>
 		<coveredBranchList></coveredBranchList>
+		<coveredFunctionCallCnt>27</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>27</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\miro_fun.c</fileName>
@@ -189,6 +210,8 @@
 		<coveredStatementList>12,13,15,17,6,7,8,10</coveredStatementList>
 		<unCoveredStatementList></unCoveredStatementList>
 		<coveredBranchList>13:TF,10:TF</coveredBranchList>
+		<coveredFunctionCallCnt>8</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>8</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\miro_fun2.c</fileName>
@@ -207,24 +230,28 @@
 		<coveredStatementList>55,67,68,57,59,70,71,50,61,52,53,54</coveredStatementList>
 		<unCoveredStatementList>99,89,78,101,103,105,91,107,80,93,109,82,83,84,95,74,86,97,87</unCoveredStatementList>
 		<coveredBranchList>68:T,59:TF,57:TF</coveredBranchList>
+		<coveredFunctionCallCnt>1</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>12</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\miro_fun.c</fileName>
 		<function><![CDATA[miro_check(char (*)*, struct link *, signed int, signed int)]]></function>
 		<functionStartLine>50</functionStartLine>
 		<functionEndLine>79</functionEndLine>
-		<statementCov>64.28</statementCov>
-		<branchCov>66.66</branchCov>
-		<mcdcCov>14.28</mcdcCov>
+		<statementCov>14.28</statementCov>
+		<branchCov>16.66</branchCov>
+		<mcdcCov>0.00</mcdcCov>
 		<totalStatementCnt>14</totalStatementCnt>
-		<coveredStatementCnt>9</coveredStatementCnt>
+		<coveredStatementCnt>2</coveredStatementCnt>
 		<totalBranchCnt>6</totalBranchCnt>
-		<coveredBranchCnt>4</coveredBranchCnt>
+		<coveredBranchCnt>1</coveredBranchCnt>
 		<totalMcdcCnt>7</totalMcdcCnt>
-		<coveredMcdcCnt>1</coveredMcdcCnt>
-		<coveredStatementList>66,77,67,69,71,52,63,65,54</coveredStatementList>
-		<unCoveredStatementList>57,58,59,60,74</unCoveredStatementList>
-		<coveredBranchList>54:F,52:TF,63:T</coveredBranchList>
+		<coveredMcdcCnt>0</coveredMcdcCnt>
+		<coveredStatementList>77,52</coveredStatementList>
+		<unCoveredStatementList>66,67,57,69,58,59,71,60,74,63,65,54</unCoveredStatementList>
+		<coveredBranchList>52:F</coveredBranchList>
+		<coveredFunctionCallCnt>0</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>0</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\miro_fun2.c</fileName>
@@ -243,6 +270,8 @@
 		<coveredStatementList>11,5,7,9</coveredStatementList>
 		<unCoveredStatementList></unCoveredStatementList>
 		<coveredBranchList>9:TF,7:TF</coveredBranchList>
+		<coveredFunctionCallCnt>0</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>0</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\miro_fun.c</fileName>
@@ -261,6 +290,8 @@
 		<coveredStatementList>100,90,92,93,85,86,97,98,87</coveredStatementList>
 		<unCoveredStatementList>94,95</unCoveredStatementList>
 		<coveredBranchList>92:T,90:T</coveredBranchList>
+		<coveredFunctionCallCnt>0</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>0</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\miro_fun2.c</fileName>
@@ -279,6 +310,8 @@
 		<coveredStatementList>23,25</coveredStatementList>
 		<unCoveredStatementList>27,28</unCoveredStatementList>
 		<coveredBranchList>25:F</coveredBranchList>
+		<coveredFunctionCallCnt>0</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>1</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\miro_fun2.c</fileName>
@@ -297,23 +330,188 @@
 		<coveredStatementList>37,39</coveredStatementList>
 		<unCoveredStatementList>41</unCoveredStatementList>
 		<coveredBranchList>39:F</coveredBranchList>
+		<coveredFunctionCallCnt>0</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>0</totalFunctionCallCnt>
 	</functionCoverage>
 	<functionCoverage>
 		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\miro_fun.c</fileName>
 		<function><![CDATA[miro_way_find(struct link *, char (*)*, signed int, signed int)]]></function>
 		<functionStartLine>105</functionStartLine>
 		<functionEndLine>235</functionEndLine>
-		<statementCov>36.84</statementCov>
-		<branchCov>35.71</branchCov>
-		<mcdcCov>1.19</mcdcCov>
+		<statementCov>35.78</statementCov>
+		<branchCov>33.92</branchCov>
+		<mcdcCov>0.00</mcdcCov>
 		<totalStatementCnt>95</totalStatementCnt>
-		<coveredStatementCnt>35</coveredStatementCnt>
+		<coveredStatementCnt>34</coveredStatementCnt>
 		<totalBranchCnt>56</totalBranchCnt>
-		<coveredBranchCnt>20</coveredBranchCnt>
+		<coveredBranchCnt>19</coveredBranchCnt>
 		<totalMcdcCnt>84</totalMcdcCnt>
-		<coveredMcdcCnt>1</coveredMcdcCnt>
-		<coveredStatementList>130,152,174,196,132,111,210,134,113,136,115,137,138,117,119,218,219,181,160,140,142,220,121,221,166,188,222,123,223,148,203,126,128,107,109</coveredStatementList>
-		<unCoveredStatementList>190,191,170,192,171,193,131,154,176,198,231,155,133,177,199,156,178,135,157,212,234,213,139,183,162,184,141,163,185,164,144,145,200,146,168,169,127,205,206,129,207,208</unCoveredStatementList>
-		<coveredBranchList>123:T,138:F,128:F,210:F,126:F,130:F,142:F,152:F,188:F,140:F,134:F,132:F,166:F,203:F,174:F,196:F,181:F,160:F,136:TF</coveredBranchList>
+		<coveredMcdcCnt>0</coveredMcdcCnt>
+		<coveredStatementList>130,152,174,196,132,111,210,134,113,136,115,138,117,119,218,219,181,160,140,142,220,121,221,166,188,222,123,223,148,203,126,128,107,109</coveredStatementList>
+		<unCoveredStatementList>190,191,170,192,171,193,131,154,176,198,231,155,133,177,199,156,178,135,157,212,234,213,137,139,183,162,184,141,163,185,164,144,145,200,146,168,169,127,205,206,129,207,208</unCoveredStatementList>
+		<coveredBranchList>123:T,138:F,128:F,136:F,210:F,126:F,130:F,142:F,152:F,188:F,140:F,134:F,132:F,166:F,203:F,174:F,196:F,181:F,160:F</coveredBranchList>
+		<coveredFunctionCallCnt>11</coveredFunctionCallCnt>
+		<totalFunctionCallCnt>22</totalFunctionCallCnt>
 	</functionCoverage>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\QS_fun.c</fileName>
+		<function><![CDATA[Q_make_findS(struct link *, signed int)]]></function>
+		<complexity>3.0</complexity>
+		<statementsCnt>7.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\QS_fun.c</fileName>
+		<function><![CDATA[Q_make_short(struct link *)]]></function>
+		<complexity>8.0</complexity>
+		<statementsCnt>22.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\miro_fun.c</fileName>
+		<function><![CDATA[map_out(char (*)*)]]></function>
+		<complexity>3.0</complexity>
+		<statementsCnt>9.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\QS_fun.c</fileName>
+		<function><![CDATA[Q_remove(struct link *)]]></function>
+		<complexity>2.0</complexity>
+		<statementsCnt>5.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\miro_fun.c</fileName>
+		<function><![CDATA[miro_check(char (*)*, struct link *, signed int, signed int)]]></function>
+		<complexity>4.0</complexity>
+		<statementsCnt>14.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\miro_fun2.c</fileName>
+		<function><![CDATA[miro_way_completionS(struct link *, char (*)*)]]></function>
+		<complexity>2.0</complexity>
+		<statementsCnt>3.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\Q_S.c</fileName>
+		<function><![CDATA[main()]]></function>
+		<complexity>1.0</complexity>
+		<statementsCnt>28.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\miro_fun.c</fileName>
+		<function><![CDATA[find_state(char (*)*, struct link *)]]></function>
+		<complexity>5.0</complexity>
+		<statementsCnt>12.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\miro_fun2.c</fileName>
+		<function><![CDATA[map_re_find(struct link *)]]></function>
+		<complexity>5.0</complexity>
+		<statementsCnt>29.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\QS_fun.c</fileName>
+		<function><![CDATA[Q_make()]]></function>
+		<complexity>1.0</complexity>
+		<statementsCnt>9.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\miro_fun.c</fileName>
+		<function><![CDATA[miro_way_find(struct link *, char (*)*, signed int, signed int)]]></function>
+		<complexity>29.0</complexity>
+		<statementsCnt>91.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\miro_fun2.c</fileName>
+		<function><![CDATA[miro_map_cpy(char (*)*, char (*)*)]]></function>
+		<complexity>3.0</complexity>
+		<statementsCnt>5.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\QS_fun.c</fileName>
+		<function><![CDATA[Q_make_add(struct link *, signed int)]]></function>
+		<complexity>2.0</complexity>
+		<statementsCnt>10.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\miro_fun.c</fileName>
+		<function><![CDATA[miro_return(struct link *, struct link *, char (*)*)]]></function>
+		<complexity>3.0</complexity>
+		<statementsCnt>10.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\miro_fun2.c</fileName>
+		<function><![CDATA[miro_way_completionQ(struct link *, char (*)*)]]></function>
+		<complexity>2.0</complexity>
+		<statementsCnt>4.0</statementsCnt>
+	</metric>
+	<metric>
+		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\QS_fun.c</fileName>
+		<function><![CDATA[Q_make_findQ(struct link *, signed int)]]></function>
+		<complexity>3.0</complexity>
+		<statementsCnt>7.0</statementsCnt>
+	</metric>
+	<fileMetric>
+		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\miro_fun.c</fileName>
+		<functionCnt>5</functionCnt>
+		<physicalLineCnt>269.0</physicalLineCnt>
+		<lineOfCodeCnt>182.0</lineOfCodeCnt>
+		<lineOfCommentCnt>20</lineOfCommentCnt>
+		<notOperatedTestCaseCnt>0</notOperatedTestCaseCnt>
+		<ignoredTestCaseCnt>0</ignoredTestCaseCnt>
+		<successTestCaseCnt>18</successTestCaseCnt>
+		<failureTestCaseCnt>0</failureTestCaseCnt>
+		<errorTestCaseCnt>20</errorTestCaseCnt>
+		<totalTestCaseCnt>38</totalTestCaseCnt>
+	</fileMetric>
+	<fileMetric>
+		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\Q_S.h</fileName>
+		<functionCnt>0</functionCnt>
+		<physicalLineCnt>66.0</physicalLineCnt>
+		<lineOfCodeCnt>29.0</lineOfCodeCnt>
+		<lineOfCommentCnt>20</lineOfCommentCnt>
+		<notOperatedTestCaseCnt>-1</notOperatedTestCaseCnt>
+		<ignoredTestCaseCnt>0</ignoredTestCaseCnt>
+		<successTestCaseCnt>-1</successTestCaseCnt>
+		<failureTestCaseCnt>-1</failureTestCaseCnt>
+		<errorTestCaseCnt>-1</errorTestCaseCnt>
+		<totalTestCaseCnt>0</totalTestCaseCnt>
+	</fileMetric>
+	<fileMetric>
+		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\miro_fun2.c</fileName>
+		<functionCnt>4</functionCnt>
+		<physicalLineCnt>112.0</physicalLineCnt>
+		<lineOfCodeCnt>71.0</lineOfCodeCnt>
+		<lineOfCommentCnt>10</lineOfCommentCnt>
+		<notOperatedTestCaseCnt>0</notOperatedTestCaseCnt>
+		<ignoredTestCaseCnt>0</ignoredTestCaseCnt>
+		<successTestCaseCnt>10</successTestCaseCnt>
+		<failureTestCaseCnt>0</failureTestCaseCnt>
+		<errorTestCaseCnt>1</errorTestCaseCnt>
+		<totalTestCaseCnt>11</totalTestCaseCnt>
+	</fileMetric>
+	<fileMetric>
+		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\QS_fun.c</fileName>
+		<functionCnt>6</functionCnt>
+		<physicalLineCnt>140.0</physicalLineCnt>
+		<lineOfCodeCnt>103.0</lineOfCodeCnt>
+		<lineOfCommentCnt>12</lineOfCommentCnt>
+		<notOperatedTestCaseCnt>0</notOperatedTestCaseCnt>
+		<ignoredTestCaseCnt>0</ignoredTestCaseCnt>
+		<successTestCaseCnt>15</successTestCaseCnt>
+		<failureTestCaseCnt>0</failureTestCaseCnt>
+		<errorTestCaseCnt>7</errorTestCaseCnt>
+		<totalTestCaseCnt>22</totalTestCaseCnt>
+	</fileMetric>
+	<fileMetric>
+		<fileName>C:\Users\hjo\Desktop\STAT_Directory\miro\Q_S.c</fileName>
+		<functionCnt>1</functionCnt>
+		<physicalLineCnt>203.0</physicalLineCnt>
+		<lineOfCodeCnt>53.0</lineOfCodeCnt>
+		<lineOfCommentCnt>94</lineOfCommentCnt>
+		<notOperatedTestCaseCnt>0</notOperatedTestCaseCnt>
+		<ignoredTestCaseCnt>0</ignoredTestCaseCnt>
+		<successTestCaseCnt>0</successTestCaseCnt>
+		<failureTestCaseCnt>0</failureTestCaseCnt>
+		<errorTestCaseCnt>1</errorTestCaseCnt>
+		<totalTestCaseCnt>1</totalTestCaseCnt>
+	</fileMetric>
 </ct.ControllerTesterResult>

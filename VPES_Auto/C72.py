@@ -73,7 +73,7 @@ class C72(unittest.TestCase):
                 print("타임아웃")
             assert "업로드하는데 실패했습니다." in p.driver.find_element_by_id("modal-content").text
             time.sleep(2)
-            self.assertEqual("- 대상 프로젝트{Selenium_DIR} 소스 형상의 업로드 위치를 확인 해 주십시오.\n    프로젝트 경로 : {VPES_PATH 설정 경로}\miro\n\n- SCM 에 미존재 하는 파일 목록\n    D:\테스트 데이터\Stub_timeout.c", p.driver.find_element_by_xpath("//div[@id='uploadResultList']/span[2]").text)
+            self.assertEqual("- 대상 프로젝트 [Selenium_DIR] 소스 관리 형상을 확인 해 주십시오.\n    관리 형상 경로 : {VPES ROOT DIRECTORY}\miro\n\n- SCM 에 미존재 하는 파일 목록\n    D:\테스트 데이터\Stub_timeout.c", p.driver.find_element_by_xpath("//div[@id='uploadResultList']/span[2]").text)
             time.sleep(2)
             self.assertEqual(p.driver.find_element_by_class_name("btn.btn-danger").is_displayed(), True)
             time.sleep(2)

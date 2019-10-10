@@ -14,11 +14,11 @@ class C11123(unittest.TestCase):
     def test_C11123(self):
         try:
             module = Default_Setting
-            i = Default_Setting.default()# 프로젝트 초기화
+            i = Default_Setting.default()  # 프로젝트 초기화
             i.setUp()
             i.test_project_init()
             i.driver.quit()
-            p = Default_User.default_user # qscroll을 제외한 사용자 삭제
+            p = Default_User.default_user()  # qscroll을 제외한 사용자 삭제
             p.setUp()
             p.test_user_init()
             p.driver.get("http://211.116.223.190:18080/vpes")  # VPES 서버 진입

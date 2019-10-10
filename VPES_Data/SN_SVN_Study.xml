@@ -9,10 +9,17 @@
 	<source>
 		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
 		<crc32>4acafe41</crc32>
+		<isExcluded>false</isExcluded>
 	</source>
 	<source>
 		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.h</fileName>
 		<crc32>ff7f74e8</crc32>
+		<isExcluded>false</isExcluded>
+	</source>
+	<source>
+		<fileName>C:\Program Files (x86)\CodeScroll SNIPER 1.6\plugins\com.codescroll.gp.core_1.0.2.201202152119\config\parserConfig\gnu_preinclude.h</fileName>
+		<crc32>bfdec2b5</crc32>
+		<isExcluded>true</isExcluded>
 	</source>
 	<ruleInfo>
 		<ruleSetName><![CDATA[MISSION_CRITICAL_ERRORS]]></ruleSetName>
@@ -764,6 +771,62 @@
 		<ruleSeverity>낮음</ruleSeverity>
 		<ruleType><![CDATA[잠재적 오류]]></ruleType>
 	</ruleInfo>
+	<scoreState>
+		<kind>5</kind>
+		<name>실제 오류가 거의 확실</name>
+		<rangeStart>100</rangeStart>
+		<rangeEnd>100</rangeEnd>
+	</scoreState>
+	<scoreState>
+		<kind>4</kind>
+		<name>실제 오류 가능성 아주 높음</name>
+		<rangeStart>76</rangeStart>
+		<rangeEnd>99</rangeEnd>
+	</scoreState>
+	<scoreState>
+		<kind>3</kind>
+		<name>실제 오류 가능성 높음</name>
+		<rangeStart>51</rangeStart>
+		<rangeEnd>75</rangeEnd>
+	</scoreState>
+	<scoreState>
+		<kind>2</kind>
+		<name>실제 오류 가능성 낮음</name>
+		<rangeStart>26</rangeStart>
+		<rangeEnd>50</rangeEnd>
+	</scoreState>
+	<scoreState>
+		<kind>1</kind>
+		<name>실제 오류 가능성 아주 낮음</name>
+		<rangeStart>1</rangeStart>
+		<rangeEnd>25</rangeEnd>
+	</scoreState>
+	<scoreState>
+		<kind>0</kind>
+		<name>없음</name>
+		<rangeStart>0</rangeStart>
+		<rangeEnd>0</rangeEnd>
+	</scoreState>
+	<violationState>
+		<kind>0</kind>
+		<name>NONE</name>
+	</violationState>
+	<violationState>
+		<kind>1</kind>
+		<name>SUPPRESS</name>
+	</violationState>
+	<violationState>
+		<kind>2</kind>
+		<name>NOW</name>
+	</violationState>
+	<violationState>
+		<kind>3</kind>
+		<name>NEXT</name>
+	</violationState>
+	<violationState>
+		<kind>4</kind>
+		<name>OTHER</name>
+	</violationState>
 	<bug>
 		<violationHash>912519091492233673517509428676646768663</violationHash>
 		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
@@ -777,6 +840,26 @@
 		<content><![CDATA[함수 printf 의 2 번 째 인자와 맞지 않는 포맷 스트링을 사용함]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
+		<probability>0</probability>
+		<status>0</status>
+		<templateId>8033;8033;8033</templateId>
+	</bug>
+	<bug>
+		<violationHash>172897693934882221588378050330662915196</violationHash>
+		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
+		<function><![CDATA[timeOutFunc()]]></function>
+		<functionStartLine>56</functionStartLine>
+		<functionEndLine>66</functionEndLine>
+		<line>65</line>
+		<rule>RTE_Type_Overrun</rule>
+		<ruleTitle>타입 범위를 벗어나는 값 사용 금지(Overrun)</ruleTitle>
+		<level>낮음</level>
+		<content><![CDATA[해당 위치는 Type-Overrun 이 발생할 가능성이 있음]]></content>
+		<suppression>false</suppression>
+		<suppressionDesc></suppressionDesc>
+		<probability>5</probability>
+		<status>0</status>
+		<templateId>8005</templateId>
 	</bug>
 	<bug>
 		<violationHash>51328470597033502625032397076206874922</violationHash>
@@ -791,6 +874,9 @@
 		<content><![CDATA[프로그램 흐름 상에 만들어진 값이 사용되지 않았음(a)]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
+		<probability>5</probability>
+		<status>0</status>
+		<templateId>8001</templateId>
 	</bug>
 	<bug>
 		<violationHash>1767197138501452271210006487628112528694</violationHash>
@@ -805,20 +891,9 @@
 		<content><![CDATA["a[i]" 변수가 초기화되지 않고 사용될 수 있음]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
-	</bug>
-	<bug>
-		<violationHash>433459381095830275413418547229645625052</violationHash>
-		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
-		<function><![CDATA[timeOutFunc()]]></function>
-		<functionStartLine>56</functionStartLine>
-		<functionEndLine>66</functionEndLine>
-		<line>65</line>
-		<rule>RTE_Unreachable_Code</rule>
-		<ruleTitle>프로그램에 도달 불가능한 지점이 없어야 함</ruleTitle>
-		<level>높음</level>
-		<content><![CDATA[프로그램상에 도달 불가능한 지점이 있음]]></content>
-		<suppression>false</suppression>
-		<suppressionDesc></suppressionDesc>
+		<probability>5</probability>
+		<status>0</status>
+		<templateId>8003</templateId>
 	</bug>
 	<bug>
 		<violationHash>1808493480082140111418275308968049698490</violationHash>
@@ -833,6 +908,9 @@
 		<content><![CDATA[함수 printf 의 2 번 째 인자와 맞지 않는 포맷 스트링을 사용함]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
+		<probability>0</probability>
+		<status>0</status>
+		<templateId>8033;8033;8033</templateId>
 	</bug>
 	<bug>
 		<violationHash>167741712363216084746943735978373116359</violationHash>
@@ -847,6 +925,26 @@
 		<content><![CDATA[함수 printf 의 포맷 스트링과 나머지 인자 수(2 개) 가 맞지 않음]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
+		<probability>0</probability>
+		<status>0</status>
+		<templateId>8061;8081;8081;8081</templateId>
+	</bug>
+	<bug>
+		<violationHash>139909788624715338908733350064597947619</violationHash>
+		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.c</fileName>
+		<function><![CDATA[testMe1()]]></function>
+		<functionStartLine>36</functionStartLine>
+		<functionEndLine>39</functionEndLine>
+		<line>38</line>
+		<rule>RTE_Type_Overrun</rule>
+		<ruleTitle>타입 범위를 벗어나는 값 사용 금지(Overrun)</ruleTitle>
+		<level>낮음</level>
+		<content><![CDATA[해당 위치는 Type-Overrun 이 발생할 가능성이 있음]]></content>
+		<suppression>false</suppression>
+		<suppressionDesc></suppressionDesc>
+		<probability>5</probability>
+		<status>0</status>
+		<templateId>8005</templateId>
 	</bug>
 	<bug>
 		<violationHash>129372167539074372275200258697201480983</violationHash>
@@ -861,6 +959,9 @@
 		<content><![CDATA[프로그램 흐름 상에 만들어진 값이 사용되지 않았음(ret)]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
+		<probability>5</probability>
+		<status>0</status>
+		<templateId>8001</templateId>
 	</bug>
 	<bug>
 		<violationHash>738256476152765593710878684624426427059</violationHash>
@@ -875,6 +976,9 @@
 		<content><![CDATA[프로그램 흐름 상에 만들어진 값이 사용되지 않았음(d)]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
+		<probability>5</probability>
+		<status>0</status>
+		<templateId>8001</templateId>
 	</bug>
 	<bug>
 		<violationHash>961047980921150285010177175916420202082</violationHash>
@@ -889,6 +993,9 @@
 		<content><![CDATA[프로그램 흐름 상에 만들어진 값이 사용되지 않았음(a)]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
+		<probability>5</probability>
+		<status>0</status>
+		<templateId>8001</templateId>
 	</bug>
 	<bug>
 		<violationHash>676883265008082655017852403864983895807</violationHash>
@@ -903,6 +1010,9 @@
 		<content><![CDATA[이 표현식은 항상 참이거나 거짓임]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
+		<probability>0</probability>
+		<status>0</status>
+		<templateId>8082;8031</templateId>
 	</bug>
 	<bug>
 		<violationHash>1361156923134118096015395262247306890423</violationHash>
@@ -917,6 +1027,9 @@
 		<content><![CDATA[void 가 아닌 함수에 리턴문이 없음]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
+		<probability>0</probability>
+		<status>0</status>
+		<templateId>100;8028</templateId>
 	</bug>
 	<bug>
 		<violationHash>827260856968148106315120517278882997257</violationHash>
@@ -931,6 +1044,9 @@
 		<content><![CDATA[무한 루프를 사용하면 안 됨]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
+		<probability>0</probability>
+		<status>0</status>
+		<templateId>8036</templateId>
 	</bug>
 	<bug>
 		<violationHash>319725421274209752612105837006389767147</violationHash>
@@ -945,6 +1061,9 @@
 		<content><![CDATA[이미 사용한 변수에 불필요한 할당을 함]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
+		<probability>0</probability>
+		<status>0</status>
+		<templateId>8029</templateId>
 	</bug>
 	<bug>
 		<violationHash>14832007077444901434156680960520187668</violationHash>
@@ -959,20 +1078,9 @@
 		<content><![CDATA[함수 printf 의 2 번 째 인자와 맞지 않는 포맷 스트링을 사용함]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
-	</bug>
-	<bug>
-		<violationHash>102118600929056731513586479449626867579</violationHash>
-		<fileName>C:\Users\hjo\Desktop\STAT_SVN\Study_Sample\study_sample.h</fileName>
-		<function></function>
-		<functionStartLine></functionStartLine>
-		<functionEndLine></functionEndLine>
-		<line>21</line>
-		<rule>RTE_Access_Using_Incompatible_Type</rule>
-		<ruleTitle>호환되지 않는 타입을 사용하여 자원 접근 금지</ruleTitle>
-		<level>낮음</level>
-		<content><![CDATA[union 타입을 사용하면 안됨]]></content>
-		<suppression>false</suppression>
-		<suppressionDesc></suppressionDesc>
+		<probability>0</probability>
+		<status>0</status>
+		<templateId>8033;8033;8033</templateId>
 	</bug>
 	<bug>
 		<violationHash>17380793387633670274763848416138404113</violationHash>
@@ -987,5 +1095,8 @@
 		<content><![CDATA[함수 printf 의 2 번 째 인자와 맞지 않는 포맷 스트링을 사용함]]></content>
 		<suppression>false</suppression>
 		<suppressionDesc></suppressionDesc>
+		<probability>0</probability>
+		<status>0</status>
+		<templateId>8033;8033;8033</templateId>
 	</bug>
 </sn.SniperResult>

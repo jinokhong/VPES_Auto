@@ -31,9 +31,11 @@ class C18(unittest.TestCase):
             p.driver.find_element_by_id("projectCheck").click()
             time.sleep(3)
             p.driver.find_element_by_id("btnState").click()
-            time.sleep(2)
+            time.sleep(3)
             p.driver.find_element_by_id("successBtn").click()
+            time.sleep(2)
             assert "Selenium::Git" in p.driver.find_element_by_xpath("//tbody[@id='projectStateList']/tr/td[2]").text
+            time.sleep(2)
             status_id = 1
         except NoSuchElementException:
             status_id = 5
